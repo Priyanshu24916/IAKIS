@@ -1,0 +1,322 @@
+/* ================================
+   LOGIN PAGE
+================================ */
+
+.login-page {
+  min-height: calc(100vh - 90px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7f6f2,
+      #e8eee9
+    );
+}
+
+
+/* Login Card */
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+
+  padding: 45px 40px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 12px 40px rgba(18, 60, 50, 0.12);
+}
+
+
+/* Header */
+
+.login-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.login-header h1 {
+  margin-bottom: 10px;
+
+  color: #123c32;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 34px;
+}
+
+.login-header p {
+  color: #66736f;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Input */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #123c32;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d5ddd9;
+
+  border-radius: 6px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #123c32;
+
+  box-shadow:
+    0 0 0 3px rgba(18, 60, 50, 0.08);
+}
+
+
+/* Login Options */
+
+.login-options {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 5px 0 25px;
+
+  font-size: 12px;
+}
+
+.login-options label {
+  color: #66736f;
+}
+
+.login-options input {
+  margin-right: 5px;
+}
+
+.login-options a {
+  color: #9b702c;
+
+  font-weight: 600;
+}
+
+
+/* Login Button */
+
+.login-submit {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #123c32;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.login-submit:hover {
+  background: #0b2d26;
+}
+
+
+/* Register */
+
+.register-link {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #66736f;
+
+  font-size: 13px;
+}
+
+.register-link a {
+  color: #9b702c;
+
+  font-weight: 700;
+}
+
+
+/* Back Home */
+
+.back-login {
+  display: block;
+
+  margin-top: 22px;
+
+  text-align: center;
+
+  color: #123c32;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.back-login:hover {
+  color: #9b702c;
+}
+/* CAPTCHA */
+
+.captcha-section {
+  margin-top: 15px;
+}
+
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.captcha-code {
+  flex: 1;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f0e8;
+  border: 1px solid #b8c8b8;
+  border-radius: 6px;
+
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-style: italic;
+}
+
+.refresh-captcha {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  background: #123b35;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.refresh-captcha:hover {
+  background: #1d5148;
+}
+
+.captcha-error {
+  color: #c62828;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* =================================
+   LOGIN PAGE HOVER EFFECTS
+================================= */
+
+/* Login Card */
+.login-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(18, 60, 50, 0.18);
+}
+
+/* Input Fields */
+.input-group input {
+  transition: all 0.3s ease;
+}
+
+.input-group input:hover {
+  border-color: #123c32;
+  box-shadow: 0 3px 12px rgba(18, 60, 50, 0.08);
+}
+
+/* Login Button */
+.login-submit {
+  transition: all 0.3s ease;
+}
+
+.login-submit:hover {
+  background: #0b2d26;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 16px rgba(18, 60, 50, 0.22);
+}
+
+/* CAPTCHA Code */
+.captcha-code {
+  transition: all 0.3s ease;
+}
+
+.captcha-code:hover {
+  background: #dceadd;
+  border-color: #123c32;
+  transform: scale(1.02);
+}
+
+/* Refresh Button */
+.refresh-captcha {
+  transition: all 0.35s ease;
+}
+
+.refresh-captcha:hover {
+  background: #1d5148;
+  transform: rotate(90deg);
+}
+
+/* Links */
+.login-options a,
+.register-link a,
+.back-login {
+  transition: all 0.3s ease;
+}
+
+.login-options a:hover,
+.register-link a:hover,
+.back-login:hover {
+  color: #b17b27;
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+
+/* ========================================
+   RICE LEARN MORE PAGE
+   Same design as Millets page
+======================================== */
+
+@import "./Millets.css";
+
+/* Rice-specific page scope */
+.rice-page {
+  min-height: 100vh;
+}

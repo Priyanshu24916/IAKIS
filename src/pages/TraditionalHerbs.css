@@ -1,0 +1,388 @@
+
+/* =========================================
+   Traditional herbs page
+========================================= */
+
+.traditional-herbs-page {
+  background: #f7f8f3;
+  color: #263b32;
+}
+
+/* Navbar */
+
+.traditional-herbs-page .navbar {
+  background: #ffffff;
+}
+
+/* Hero section */
+
+.traditional-herbs-page .millet-header {
+  background: linear-gradient(135deg, #edf5e9, #f8f6e9);
+}
+
+.traditional-herbs-page .millet-tag {
+  background: #e1edda;
+  color: #28613d;
+}
+
+.traditional-herbs-page .millet-header-content h1 {
+  color: #174b32;
+}
+
+.traditional-herbs-page .millet-header-content p {
+  color: #5c6d61;
+}
+
+.traditional-herbs-page .millet-start-btn {
+  background: #246b43;
+  color: #ffffff;
+}
+
+.traditional-herbs-page .millet-start-btn:hover {
+  background: #174d30;
+}
+
+/* Hero image */
+
+.traditional-herbs-page .millet-hero-image img {
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* Main content */
+
+.traditional-herbs-page .millet-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 45px 24px 65px;
+}
+
+/* Content cards */
+
+.traditional-herbs-page .millet-card {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5eae1;
+  border-radius: 15px;
+  padding: 34px 38px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(32, 66, 45, 0.045);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.traditional-herbs-page .millet-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(32, 66, 45, 0.09);
+}
+
+/* Section number */
+
+.traditional-herbs-page .millet-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: #e7f0e5;
+  color: #276341;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* Headings */
+
+.traditional-herbs-page .millet-card h2 {
+  margin: 0 0 18px;
+  color: #174b32;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 750;
+}
+
+.traditional-herbs-page .millet-card h3 {
+  color: #276341;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 9px;
+}
+
+/* Paragraphs */
+
+.traditional-herbs-page .millet-card p {
+  color: #5d6b62;
+  font-size: 15.5px;
+  line-height: 1.9;
+  margin: 0 0 15px;
+}
+
+.traditional-herbs-page .millet-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists */
+
+.traditional-herbs-page .millet-card ul {
+  padding-left: 23px;
+  margin: 15px 0 18px;
+}
+
+.traditional-herbs-page .millet-card li {
+  color: #5d6b62;
+  font-size: 15px;
+  line-height: 1.85;
+  padding-left: 5px;
+  margin-bottom: 8px;
+}
+
+.traditional-herbs-page .millet-card li::marker {
+  color: #4b875d;
+}
+
+/* Highlight box */
+
+.traditional-herbs-page .millet-highlight {
+  background: #f0f6ed;
+  border-left: 4px solid #579568;
+  border-radius: 8px;
+  padding: 19px 22px;
+  margin-top: 22px;
+}
+
+.traditional-herbs-page .millet-highlight strong {
+  display: block;
+  color: #276341;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.traditional-herbs-page .millet-highlight p {
+  color: #56695b;
+  margin: 0;
+}
+
+/* Feature grid */
+
+.traditional-herbs-page .millet-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.traditional-herbs-page .millet-feature {
+  background: #f8faf6;
+  border: 1px solid #e7ede4;
+  border-radius: 11px;
+  padding: 20px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.traditional-herbs-page .millet-feature:hover {
+  background: #f0f6ed;
+  border-color: #cbdcc9;
+}
+
+.traditional-herbs-page .millet-feature h3 {
+  color: #286443;
+}
+
+.traditional-herbs-page .millet-feature p {
+  font-size: 14.5px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Process steps */
+
+.traditional-herbs-page .millet-process {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 23px;
+}
+
+.traditional-herbs-page .millet-process-step {
+  background: #f8faf6;
+  border: 1px solid #e5ebe1;
+  border-radius: 11px;
+  padding: 20px;
+}
+
+.traditional-herbs-page .millet-process-step h3 {
+  color: #286443;
+}
+
+.traditional-herbs-page .millet-process-step p {
+  margin: 0;
+  font-size: 14.5px;
+}
+
+/* Nutrient cards */
+
+.traditional-herbs-page .millet-nutrients {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.traditional-herbs-page .millet-nutrients > div {
+  padding: 20px;
+  background: #f8faf6;
+  border: 1px solid #e5ebe1;
+  border-radius: 11px;
+}
+
+.traditional-herbs-page .millet-nutrients h3 {
+  color: #286443;
+}
+
+.traditional-herbs-page .millet-nutrients p {
+  font-size: 14.5px;
+  margin: 0;
+}
+
+/* Conclusion */
+
+.traditional-herbs-page .millet-conclusion {
+  background: linear-gradient(135deg, #edf5e9, #f8faf4);
+  border: 1px solid #dce9d8;
+  border-left: 5px solid #438458;
+  padding: 35px 38px;
+}
+
+.traditional-herbs-page .millet-conclusion h2 {
+  color: #174b32;
+  margin-bottom: 18px;
+}
+
+.traditional-herbs-page .millet-conclusion p {
+  color: #52675a;
+}
+
+/* Back to crops */
+
+.traditional-herbs-page .millet-back {
+  margin: 30px 0 10px;
+}
+
+.traditional-herbs-page .millet-back a {
+  display: inline-block;
+  color: #286443;
+  background: #e7f0e5;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.traditional-herbs-page .millet-back a:hover {
+  background: #286443;
+  color: #ffffff;
+}
+
+/* Footer */
+
+.traditional-herbs-page .millet-footer {
+  background: #153e2b;
+  color: #ffffff;
+}
+
+.traditional-herbs-page .millet-footer-content {
+  text-align: center;
+}
+
+.traditional-herbs-page .millet-footer-content h2 {
+  color: #ffffff;
+}
+
+.traditional-herbs-page .millet-footer-content p {
+  color: #d5e3d8;
+}
+
+.traditional-herbs-page .millet-footer-bottom {
+  color: #c1d2c6;
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .traditional-herbs-page .millet-content {
+    padding: 35px 20px 50px;
+  }
+
+  .traditional-herbs-page .millet-card {
+    padding: 29px;
+  }
+
+  .traditional-herbs-page .millet-card h2 {
+    font-size: 23px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .traditional-herbs-page .millet-content {
+    padding: 25px 14px 40px;
+  }
+
+  .traditional-herbs-page .millet-card {
+    padding: 23px 19px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+  }
+
+  .traditional-herbs-page .millet-card h2 {
+    font-size: 21px;
+  }
+
+  .traditional-herbs-page .millet-card h3 {
+    font-size: 16px;
+  }
+
+  .traditional-herbs-page .millet-card p,
+  .traditional-herbs-page .millet-card li {
+    font-size: 14.5px;
+    line-height: 1.8;
+  }
+
+  .traditional-herbs-page .millet-feature-grid,
+  .traditional-herbs-page .millet-process,
+  .traditional-herbs-page .millet-nutrients {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .traditional-herbs-page .millet-feature,
+  .traditional-herbs-page .millet-process-step,
+  .traditional-herbs-page .millet-nutrients > div {
+    padding: 17px;
+  }
+
+  .traditional-herbs-page .millet-conclusion {
+    padding: 25px 20px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 380px) {
+  .traditional-herbs-page .millet-card {
+    padding: 19px 15px;
+  }
+
+  .traditional-herbs-page .millet-card h2 {
+    font-size: 19px;
+  }
+
+  .traditional-herbs-page .millet-number {
+    width: 38px;
+    height: 38px;
+  }
+}

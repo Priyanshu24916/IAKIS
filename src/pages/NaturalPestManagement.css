@@ -1,0 +1,696 @@
+
+/* =====================================
+   NATURAL PEST MANAGEMENT
+   IAKIS - Traditional Practices
+===================================== */
+
+.pest-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f8f5;
+  color: #26372c;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.pest-page * {
+  box-sizing: border-box;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.pest-page .navbar {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5ece5;
+  box-shadow: 0 3px 15px rgba(25, 65, 35, 0.06);
+  position: relative;
+  z-index: 10;
+}
+
+.pest-page .logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pest-page .logo img {
+  width: auto;
+  max-width: 190px;
+  max-height: 65px;
+  object-fit: contain;
+}
+
+.pest-page .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.pest-page .nav-links a {
+  color: #294b34;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.pest-page .nav-links a:hover {
+  color: #4b9b55;
+}
+
+/* =====================================
+   DETAIL HEADER
+===================================== */
+
+.pest-page .detail-header {
+  width: 100%;
+  min-height: 340px;
+  padding: 75px 8% 80px;
+  background: linear-gradient(125deg, #123d28, #216b3d, #39884d);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pest-page .detail-header .section-label {
+  color: #e0f4df;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 20px;
+}
+
+.pest-page .detail-header h1 {
+  max-width: 950px;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.pest-page .detail-header p {
+  max-width: 780px;
+  margin: 0;
+  color: #e6f3e8;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* =====================================
+   SECTION LABEL
+===================================== */
+
+.pest-page .section-label {
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 14px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  background: #e8f4e9;
+  color: #28733c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.pest-page .detail-content {
+  width: min(1120px, 88%);
+  margin: 55px auto 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* =====================================
+   DETAIL CARDS
+===================================== */
+
+.pest-page .detail-card {
+  width: 100%;
+  padding: 34px 38px;
+  background: #ffffff;
+  border: 1px solid #e5ede5;
+  border-radius: 15px;
+  box-shadow: 0 5px 22px rgba(30, 70, 40, 0.055);
+  transition: box-shadow 0.25s ease;
+}
+
+.pest-page .detail-card:hover {
+  box-shadow: 0 9px 28px rgba(30, 70, 40, 0.09);
+}
+
+.pest-page .detail-card h2 {
+  margin: 0 0 19px;
+  color: #205c34;
+  font-size: clamp(23px, 3vw, 29px);
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.pest-page .detail-card h3 {
+  color: #28663b;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.pest-page .detail-card p {
+  color: #526157;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0 0 15px;
+}
+
+.pest-page .detail-card p:last-child {
+  margin-bottom: 0;
+}
+
+.pest-page .detail-card ul {
+  padding-left: 23px;
+  margin: 15px 0 0;
+}
+
+.pest-page .detail-card li {
+  color: #526157;
+  font-size: 16px;
+  line-height: 1.85;
+  padding-left: 5px;
+  margin-bottom: 9px;
+}
+
+.pest-page .detail-card li::marker {
+  color: #3d914f;
+}
+
+/* =====================================
+   SIMPLE EXAMPLE
+===================================== */
+
+.pest-page .simple-example {
+  margin-top: 23px;
+  padding: 22px 25px;
+  background: #f0f7ef;
+  border-left: 4px solid #4c9a56;
+  border-radius: 9px;
+}
+
+.pest-page .simple-example h3 {
+  margin-bottom: 8px;
+}
+
+.pest-page .simple-example p {
+  margin: 0;
+}
+
+/* =====================================
+   FEATURE GRID
+===================================== */
+
+.pest-page .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+  margin-top: 23px;
+}
+
+.pest-page .feature-item {
+  min-width: 0;
+  padding: 23px;
+  background: #f7faf6;
+  border: 1px solid #e3ede1;
+  border-radius: 11px;
+  transition: all 0.25s ease;
+}
+
+.pest-page .feature-item:hover {
+  background: #eff7ee;
+  border-color: #b9d9b9;
+  transform: translateY(-3px);
+}
+
+.pest-page .feature-item h3 {
+  margin-bottom: 9px;
+}
+
+.pest-page .feature-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =====================================
+   RESOURCE LIST
+===================================== */
+
+.pest-page .resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.pest-page .resource-item {
+  padding: 19px 22px;
+  background: #f8faf7;
+  border: 1px solid #e5ece3;
+  border-left: 4px solid #579b5c;
+  border-radius: 9px;
+  transition: all 0.25s ease;
+}
+
+.pest-page .resource-item:hover {
+  background: #eff7ee;
+  transform: translateX(4px);
+}
+
+.pest-page .resource-item h3 {
+  margin-bottom: 7px;
+}
+
+.pest-page .resource-item p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* =====================================
+   STEP BY STEP PROCESS
+===================================== */
+
+.pest-page .step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pest-page .step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  padding: 20px;
+  background: #f7faf6;
+  border: 1px solid #e2ebe0;
+  border-radius: 11px;
+  transition: all 0.25s ease;
+}
+
+.pest-page .step-item:hover {
+  background: #eff7ee;
+  border-color: #b9d9b9;
+  transform: translateX(4px);
+}
+
+.pest-page .step-number {
+  width: 43px;
+  height: 43px;
+  min-width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #26733e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.pest-page .step-item h3 {
+  margin: 2px 0 7px;
+}
+
+.pest-page .step-item p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* =====================================
+   NATURAL PEST MANAGEMENT CYCLE
+===================================== */
+
+.pest-page .farming-flow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.pest-page .farming-flow .flow-step {
+  width: min(100%, 650px);
+  padding: 22px 25px;
+  text-align: center;
+  background: #f1f8ef;
+  border: 1px solid #cfe4cc;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(35, 90, 45, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pest-page .farming-flow .flow-step span {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #46834c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  transition: color 0.3s ease;
+}
+
+.pest-page .farming-flow .flow-step h3 {
+  margin: 0 0 8px;
+  color: #28663b;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.pest-page .farming-flow .flow-step p {
+  margin: 0;
+  color: #526157;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.pest-page .farming-flow .flow-step:hover {
+  background: #14532d !important;
+  border-color: #14532d !important;
+  transform: translateY(-5px);
+  box-shadow: 0 9px 22px rgba(25, 75, 40, 0.22);
+}
+
+.pest-page .farming-flow .flow-step:hover span,
+.pest-page .farming-flow .flow-step:hover h3,
+.pest-page .farming-flow .flow-step:hover p {
+  color: #ffffff !important;
+}
+
+.pest-page .farming-flow .flow-arrow {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #39854a;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* =====================================
+   KNOWLEDGE NOTE
+===================================== */
+
+.pest-page .knowledge-note {
+  width: 100%;
+  padding: 28px 32px;
+  background: #fff9e9;
+  border: 1px solid #f0e2b9;
+  border-left: 5px solid #d5a43b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.pest-page .knowledge-note:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30, 70, 40, 0.08);
+}
+
+.pest-page .knowledge-note h3 {
+  margin: 0 0 11px;
+  color: #80601f;
+  font-size: 20px;
+}
+
+.pest-page .knowledge-note p {
+  margin: 0;
+  color: #655b43;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* =====================================
+   BACK BUTTON
+===================================== */
+
+.pest-page .detail-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.pest-page .detail-back a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+  color: #28683b;
+  background: #ffffff;
+  border: 1px solid #43874e;
+  border-radius: 10px;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.pest-page .detail-back a:hover {
+  color: #ffffff;
+  background: #174b2b;
+  border-color: #174b2b;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.pest-page .footer {
+  width: 100%;
+  background: #153d29;
+  color: #ffffff;
+}
+
+.pest-page .footer-content {
+  max-width: 1120px;
+  margin: auto;
+  padding: 45px 6% 35px;
+  text-align: center;
+}
+
+.pest-page .footer-content h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.pest-page .footer-content p {
+  margin: 7px 0;
+  color: #d4e6d7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.pest-page .footer-bottom {
+  padding: 17px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pest-page .footer-bottom p {
+  margin: 0;
+  color: #c9ddcd;
+  font-size: 13px;
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+  .pest-page .navbar {
+    padding: 13px 4%;
+    gap: 18px;
+  }
+
+  .pest-page .nav-links {
+    gap: 18px;
+  }
+
+  .pest-page .detail-content {
+    width: 91%;
+  }
+
+  .pest-page .detail-header {
+    min-height: 310px;
+  }
+
+  .pest-page .detail-card {
+    padding: 29px;
+  }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 650px) {
+  .pest-page .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 4%;
+    gap: 14px;
+  }
+
+  .pest-page .logo img {
+    max-width: 155px;
+    max-height: 55px;
+  }
+
+  .pest-page .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  .pest-page .nav-links a {
+    font-size: 13px;
+  }
+
+  .pest-page .detail-header {
+    min-height: auto;
+    padding: 60px 6% 65px;
+  }
+
+  .pest-page .detail-header h1 {
+    font-size: 34px;
+  }
+
+  .pest-page .detail-header p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .pest-page .detail-content {
+    width: 92%;
+    margin: 30px auto 45px;
+    gap: 19px;
+  }
+
+  .pest-page .detail-card {
+    padding: 23px 19px;
+    border-radius: 12px;
+  }
+
+  .pest-page .detail-card h2 {
+    font-size: 23px;
+  }
+
+  .pest-page .detail-card p,
+  .pest-page .detail-card li {
+    font-size: 15px;
+  }
+
+  .pest-page .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .pest-page .feature-item {
+    padding: 19px;
+  }
+
+  .pest-page .step-item {
+    gap: 13px;
+    padding: 16px;
+  }
+
+  .pest-page .step-number {
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+    font-size: 12px;
+  }
+
+  .pest-page .farming-flow .flow-step {
+    padding: 19px 15px;
+  }
+
+  .pest-page .farming-flow .flow-step h3 {
+    font-size: 17px;
+  }
+
+  .pest-page .knowledge-note {
+    padding: 22px 19px;
+  }
+
+  .pest-page .footer-content {
+    padding: 35px 6% 28px;
+  }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 380px) {
+  .pest-page .nav-links {
+    gap: 10px 14px;
+  }
+
+  .pest-page .nav-links a {
+    font-size: 12px;
+  }
+
+  .pest-page .detail-header h1 {
+    font-size: 29px;
+  }
+
+  .pest-page .detail-card {
+    padding: 19px 15px;
+  }
+
+  .pest-page .detail-card h2 {
+    font-size: 21px;
+  }
+
+  .pest-page .step-item {
+    gap: 10px;
+    padding: 13px;
+  }
+}
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .pest-page *,
+  .pest-page *::before,
+  .pest-page *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

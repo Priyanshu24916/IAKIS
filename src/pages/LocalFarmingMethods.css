@@ -1,0 +1,756 @@
+
+/* ===== Local Farming Methods Page ===== */
+
+.local-page {
+  min-height: 100vh;
+  background: #f5f8f5;
+  font-family: Arial, sans-serif;
+  color: #263b2b;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.local-page .navbar {
+  min-height: 85px;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  gap: 20px;
+}
+
+.local-page .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #205b35;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.local-page .logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.local-page .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.local-page .nav-links a {
+  color: #285b39;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.local-page .nav-links a:hover {
+  color: #102f1d;
+}
+
+/* Page Header */
+
+.local-page .detail-header {
+  padding: 75px 20px 80px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #174b2b, #367b49);
+}
+
+.local-page .header-tag {
+  display: inline-block;
+  padding: 8px 17px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.local-page .detail-header h1 {
+  margin: 0 0 18px;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.local-page .detail-header p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #eaf4ec;
+}
+
+/* Main Content */
+
+.local-page .detail-content {
+  width: 90%;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+
+/* Question Cards */
+
+.local-page .detail-card {
+  padding: 30px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border: 1px solid #e2ebe2;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(28, 72, 39, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.local-page .detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(28, 72, 39, 0.11);
+}
+
+.local-page .section-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #347747;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.local-page .detail-card h2 {
+  margin: 0 0 15px;
+  color: #194b2c;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.local-page .detail-card p {
+  margin: 0 0 15px;
+  color: #4c5c50;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* Simple Example */
+
+.local-page .simple-example {
+  margin-top: 18px;
+  padding: 16px 19px;
+  background: #f0f7f0;
+  border-left: 4px solid #43874e;
+  border-radius: 7px;
+  color: #3b5540;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.local-page .simple-example strong {
+  color: #205b35;
+}
+
+/* Resource List */
+
+.local-page .resource-list {
+  padding-left: 23px;
+  margin: 14px 0 0;
+}
+
+.local-page .resource-list li {
+  padding-left: 5px;
+  margin-bottom: 11px;
+  color: #4c5c50;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.local-page .resource-list li::marker {
+  color: #39804b;
+}
+
+/* Feature Grid */
+
+.local-page .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+  margin-top: 22px;
+}
+
+.local-page .feature-box {
+  padding: 21px;
+  background: #f3f8f3;
+  border: 1px solid #dfebdf;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.local-page .feature-box:hover {
+  background: #e4f0e5;
+  border-color: #8eb795;
+  transform: translateY(-4px);
+}
+
+.local-page .feature-box h3 {
+  margin: 0 0 9px;
+  color: #245d36;
+  font-size: 18px;
+}
+
+.local-page .feature-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Step-by-Step Process */
+
+.local-page .step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.local-page .step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 19px;
+  background: #f4f8f4;
+  border: 1px solid #e0eae0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.local-page .step-item:hover {
+  background: #e8f2e9;
+  border-color: #9bbd9f;
+  transform: translateX(5px);
+}
+
+.local-page .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  background: #28683b;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.local-page .step-item h3 {
+  margin: 2px 0 7px;
+  color: #245b35;
+  font-size: 17px;
+}
+
+.local-page .step-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Farming Cycle Diagram */
+
+.local-page .farming-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.local-page .flow-step {
+  width: 100%;
+  max-width: 570px;
+  padding: 19px 20px;
+  text-align: center;
+  background: #edf5ee;
+  border: 1px solid #c8ddca;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.local-page .flow-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 7px;
+  background: #d7e9d9;
+  color: #245b35;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.local-page .flow-step h3 {
+  margin: 0 0 6px;
+  color: #245b35;
+  font-size: 18px;
+}
+
+.local-page .flow-step p {
+  margin: 0;
+  color: #526657;
+  font-size: 14px;
+}
+
+.local-page .flow-step:hover {
+  background: #174b2b;
+  border-color: #174b2b;
+  transform: translateY(-5px);
+  box-shadow: 0 9px 20px rgba(23, 75, 43, 0.2);
+}
+
+.local-page .flow-step:hover h3,
+.local-page .flow-step:hover p {
+  color: #ffffff;
+}
+
+.local-page .flow-step:hover span {
+  background: #ffffff;
+  color: #174b2b;
+}
+
+.local-page .flow-arrow {
+  color: #347747;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* IAKIS Knowledge Note */
+
+.local-page .knowledge-note {
+  padding: 30px;
+  margin: 35px 0;
+  background: #eaf3eb;
+  border-left: 5px solid #28683b;
+  border-radius: 12px;
+}
+
+.local-page .knowledge-note h2 {
+  margin: 0 0 12px;
+  color: #194b2c;
+  font-size: 23px;
+}
+
+.local-page .knowledge-note p {
+  margin: 0;
+  color: #455b49;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Back Button */
+
+.local-page .detail-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 35px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.local-page .detail-back a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+  background: #ffffff;
+  color: #28683b;
+  border: 1px solid #43874e;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: none;
+  transform: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.local-page .detail-back a:hover {
+  background: #174b2b;
+  color: #ffffff;
+  border-color: #174b2b;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Footer */
+
+.local-page .footer {
+  background: #153d25;
+  color: #ffffff;
+  text-align: center;
+}
+
+.local-page .footer-content {
+  padding: 35px 20px 25px;
+}
+
+.local-page .footer-content h2 {
+  margin: 0 0 9px;
+  font-size: 25px;
+}
+
+.local-page .footer-content p {
+  margin: 0;
+  color: #d8e8da;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.local-page .footer-bottom {
+  padding: 15px;
+  background: #10321e;
+  color: #c8ddcc;
+  font-size: 13px;
+}
+
+/* Tablet View */
+
+@media (max-width: 768px) {
+  .local-page .navbar {
+    padding: 12px 4%;
+  }
+
+  .local-page .logo {
+    font-size: 21px;
+  }
+
+  .local-page .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .local-page .nav-links {
+    gap: 14px;
+  }
+
+  .local-page .nav-links a {
+    font-size: 13px;
+  }
+
+  .local-page .detail-header {
+    padding: 60px 18px;
+  }
+
+  .local-page .detail-header h1 {
+    font-size: 34px;
+  }
+
+  .local-page .detail-content {
+    width: 92%;
+    margin: 30px auto;
+  }
+
+  .local-page .detail-card {
+    padding: 24px;
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 480px) {
+  .local-page .navbar {
+    min-height: 70px;
+    padding: 10px 4%;
+  }
+
+  .local-page .logo {
+    gap: 7px;
+    font-size: 18px;
+  }
+
+  .local-page .logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .local-page .nav-links {
+    gap: 10px;
+  }
+
+  .local-page .nav-links a {
+    font-size: 11px;
+  }
+
+  .local-page .detail-header {
+    padding: 48px 16px;
+  }
+
+  .local-page .header-tag {
+    font-size: 11px;
+  }
+
+  .local-page .detail-header h1 {
+    font-size: 28px;
+  }
+
+  .local-page .detail-header p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .local-page .detail-content {
+    width: 92%;
+    margin: 22px auto;
+  }
+
+  .local-page .detail-card {
+    padding: 19px;
+    margin-bottom: 18px;
+    border-radius: 11px;
+  }
+
+  .local-page .section-label {
+    font-size: 11px;
+  }
+
+  .local-page .detail-card h2 {
+    font-size: 20px;
+  }
+
+  .local-page .detail-card p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .local-page .simple-example {
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  .local-page .resource-list li {
+    font-size: 13px;
+  }
+
+  .local-page .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .local-page .feature-box {
+    padding: 17px;
+  }
+
+  .local-page .feature-box h3 {
+    font-size: 16px;
+  }
+
+  .local-page .feature-box p {
+    font-size: 13px;
+  }
+
+  .local-page .step-item {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .local-page .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .local-page .step-item h3 {
+    font-size: 15px;
+  }
+
+  .local-page .step-item p {
+    font-size: 13px;
+  }
+
+  .local-page .flow-step {
+    padding: 16px 12px;
+  }
+
+  .local-page .flow-step h3 {
+    font-size: 16px;
+  }
+
+  .local-page .flow-step p {
+    font-size: 13px;
+  }
+
+  .local-page .knowledge-note {
+    padding: 21px;
+  }
+
+  .local-page .knowledge-note h2 {
+    font-size: 20px;
+  }
+
+  .local-page .knowledge-note p {
+    font-size: 14px;
+  }
+
+  .local-page .detail-back a {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+}
+/* ===== Local Farming Methods Logo Size Fix ===== */
+
+.local-page nav img {
+  width: 190px !important;
+  height: auto !important;
+  max-width: none !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .local-page nav img {
+    width: 160px !important;
+  }
+}
+/* ===== Local Farming Process Cycle Hover Effect ===== */
+
+.local-page .farming-flow .flow-box {
+  background: #e8f5e9 !important;
+  color: #263b2b !important;
+  border: 1px solid #c8dfca;
+  border-radius: 14px;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+
+.local-page .farming-flow .flow-box h3,
+.local-page .farming-flow .flow-box p,
+.local-page .farming-flow .flow-box .flow-icon {
+  transition: all 0.3s ease !important;
+}
+
+.local-page .farming-flow .flow-box:hover {
+  background: #14532d !important;
+  color: #ffffff !important;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(20, 83, 45, 0.25);
+}
+
+.local-page .farming-flow .flow-box:hover h3,
+.local-page .farming-flow .flow-box:hover p {
+  color: #ffffff !important;
+}
+
+.local-page .farming-flow .flow-box:hover .flow-icon {
+  transform: scale(1.12);
+}
+
+/* ===== Premium Local Farming Knowledge Note ===== */
+
+.local-page .knowledge-note {
+  position: relative;
+  padding: 30px 32px;
+  margin: 40px 0 35px;
+  background: linear-gradient(120deg, #f0f8f0, #e5f1e7);
+  border: 1px solid #d5e7d7;
+  border-left: 5px solid #28683b;
+  border-radius: 13px;
+  box-shadow: 0 5px 18px rgba(25, 75, 44, 0.07);
+  transition: all 0.3s ease;
+}
+
+.local-page .knowledge-note:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 24px rgba(25, 75, 44, 0.12);
+}
+
+/* Knowledge Note Label */
+
+.local-page .knowledge-note .section-label {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 12px;
+  padding: 7px 13px;
+  background: #dcefe0;
+  color: #28683b;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Knowledge Note Heading */
+
+.local-page .knowledge-note h2 {
+  margin: 0 0 12px;
+  color: #194b2c;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Knowledge Note Description */
+
+.local-page .knowledge-note p:not(.section-label) {
+  margin: 0;
+  color: #455b49;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* Back Button Spacing */
+
+.local-page .detail-back {
+  padding: 12px 0 42px;
+  text-align: center;
+}
+
+/* Footer Spacing */
+
+.local-page footer {
+  margin-top: 0;
+}
+
+.local-page footer .footer-content {
+  padding: 38px 20px 27px;
+}
+
+.local-page footer .copyright {
+  padding: 17px 15px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .local-page .knowledge-note {
+    padding: 23px 20px;
+    margin: 28px 0;
+  }
+
+  .local-page .knowledge-note h2 {
+    font-size: 21px;
+  }
+
+  .local-page .knowledge-note p:not(.section-label) {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .local-page .detail-back {
+    padding: 8px 0 30px;
+  }
+}

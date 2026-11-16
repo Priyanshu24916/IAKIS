@@ -1,0 +1,38 @@
+
+/* =========================================
+   LOCAL VARIETIES LEARN MORE PAGE
+   IAKIS - Green and Golden Theme
+========================================= */
+
+/* Reuse the complete Millets page design */
+
+@import "./Millets.css";
+
+/* LOCAL VARIETIES PAGE */
+
+.local-varieties-page {
+  min-height: 100vh;
+}
+
+/* HERO IMAGE */
+
+.local-varieties-page .millet-hero-image img {
+  object-position: center;
+}
+
+/* SECTION NAVIGATION */
+
+.local-varieties-page .millet-card {
+  scroll-margin-top: 25px;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .local-varieties-page *,
+  .local-varieties-page *::before,
+  .local-varieties-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

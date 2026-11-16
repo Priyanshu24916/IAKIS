@@ -1,0 +1,825 @@
+
+/* ===== Traditional Water Management Page ===== */
+
+.water-navbar {
+  width: 100%;
+  min-height: 85px;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 3px 15px rgba(18, 61, 42, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.water-navbar .logo img {
+  width: 75px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+}
+
+.water-navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.water-navbar .nav-links a {
+  color: #123d2a;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.water-navbar .nav-links a:hover {
+  color: #c89535;
+}
+
+/* ===== Page Header ===== */
+
+.detail-header {
+  padding: 75px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #123d2a, #286b48);
+  color: #ffffff;
+}
+
+.detail-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.detail-header p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e7f0e9;
+}
+
+/* ===== Main Content ===== */
+
+.detail-content {
+  max-width: 1150px;
+  width: 90%;
+  margin: 55px auto;
+}
+
+.detail-card,
+.limitation-card {
+  background: #ffffff;
+  padding: 35px;
+  margin-bottom: 30px;
+  border: 1px solid #e3eae3;
+  border-radius: 15px;
+  box-shadow: 0 6px 22px rgba(18, 61, 42, 0.06);
+}
+
+.detail-card h2,
+.limitation-card h2 {
+  color: #123d2a;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.detail-card h3,
+.limitation-card h3 {
+  color: #1f6b45;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 22px 0 10px;
+}
+
+.detail-card p,
+.limitation-card p {
+  color: #4d5d52;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+.detail-card ul,
+.limitation-card ul {
+  padding-left: 23px;
+  margin-top: 15px;
+}
+
+.detail-card li,
+.limitation-card li {
+  color: #4d5d52;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 9px;
+}
+
+.detail-subheading {
+  color: #1f6b45;
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 28px 0 12px;
+}
+
+/* ===== Example Box ===== */
+
+.simple-example {
+  margin-top: 25px;
+  padding: 24px 28px;
+  background: #f1f7f1;
+  border-left: 4px solid #c89535;
+  border-radius: 9px;
+}
+
+.simple-example h3 {
+  color: #123d2a;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.simple-example p {
+  margin-bottom: 0;
+}
+
+/* ===== Step List ===== */
+
+.step-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px;
+  background: #f8faf7;
+  border: 1px solid #dfe8e1;
+  border-radius: 11px;
+}
+
+.step-item > span {
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #123d2a;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.step-item h3 {
+  margin: 3px 0 7px;
+  color: #123d2a;
+  font-size: 17px;
+}
+
+.step-item p {
+  margin: 0;
+}
+
+/* ===== Water Cycle ===== */
+
+.farming-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 30px auto;
+}
+
+.flow-box {
+  width: min(100%, 380px);
+  padding: 17px 20px;
+  text-align: center;
+  background: #edf5ee;
+  border: 1px solid #cbdccb;
+  border-radius: 10px;
+  color: #123d2a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.flow-arrow {
+  color: #c89535;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* ===== Note Box ===== */
+
+.detail-note {
+  margin-top: 22px;
+  padding: 17px 20px;
+  background: #fff8e9;
+  border-left: 4px solid #c89535;
+  border-radius: 8px;
+  color: #665638;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.knowledge-note {
+  padding: 28px;
+  margin: 30px 0;
+  background: #edf5ee;
+  border-radius: 13px;
+  border: 1px solid #d5e3d6;
+}
+
+.knowledge-note h3 {
+  color: #123d2a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.knowledge-note p {
+  color: #4d5d52;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ===== Limitations ===== */
+
+.limitation-card {
+  background: #fffdf8;
+  border-left: 5px solid #c89535;
+}
+
+/* ===== Conclusion ===== */
+
+.conclusion-card {
+  background: linear-gradient(135deg, #f0f7ef, #ffffff);
+  border: 1px solid #cbdccb;
+  border-left: 5px solid #c89535;
+}
+
+.conclusion-card h2 {
+  color: #123d2a;
+}
+
+/* ===== Back Button ===== */
+
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 35px;
+  padding: 13px 24px;
+  background: #123d2a;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.detail-back:hover {
+  background: #c89535;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+
+footer {
+  padding: 25px 15px;
+  background: #123d2a;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+  .water-navbar {
+    padding: 12px 4%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .water-navbar .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .water-navbar .nav-links a {
+    font-size: 13px;
+  }
+
+  .detail-header {
+    padding: 55px 18px;
+  }
+
+  .detail-header h1 {
+    font-size: 29px;
+  }
+
+  .detail-content {
+    width: 92%;
+    margin: 35px auto;
+  }
+
+  .detail-card,
+  .limitation-card {
+    padding: 23px;
+  }
+
+  .detail-card h2,
+  .limitation-card h2 {
+    font-size: 22px;
+  }
+
+  .step-item {
+    gap: 13px;
+    padding: 17px;
+  }
+
+  .step-item > span {
+    min-width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .water-navbar {
+    justify-content: center;
+  }
+
+  .water-navbar .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .detail-header h1 {
+    font-size: 25px;
+  }
+
+  .detail-card,
+  .limitation-card {
+    padding: 19px;
+  }
+}
+/* ===== Water Management Header Fix ===== */
+
+.water-navbar {
+  min-height: 90px;
+  padding: 10px 6%;
+  background: #ffffff;
+}
+
+.water-navbar .logo img {
+  width: 135px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.water-navbar .nav-links {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  visibility: visible;
+}
+
+.water-navbar .nav-links a {
+  display: inline-block;
+  color: #123d2a !important;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== Hero Header Fix ===== */
+
+.water-navbar + .detail-header {
+  min-height: 300px;
+  height: auto;
+  padding: 75px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.water-navbar + .detail-header h1 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+ text-transform: none;
+}
+
+.water-navbar + .detail-header p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ===== Main Content Fix ===== */
+
+.water-content {
+  max-width: 1100px;
+  width: 90%;
+  margin: 45px auto;
+  padding: 0;
+  background: transparent;
+}
+
+/* ===== Back Button Position ===== */
+
+.water-content .detail-back {
+  display: flex;
+  width: fit-content;
+  margin: 35px auto 45px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Footer Fix ===== */
+
+.water-content + footer {
+  width: 100%;
+  margin-top: 0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+/* ===== Mobile Fix ===== */
+
+@media (max-width: 768px) {
+  .water-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .water-navbar .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .water-navbar + .detail-header {
+    min-height: 230px;
+    padding: 55px 15px;
+  }
+
+  .water-navbar + .detail-header h1 {
+    font-size: 28px;
+  }
+
+  .water-content {
+    width: 92%;
+    margin: 30px auto;
+  }
+}
+/* Hamburger Menu */
+
+.water-navbar {
+  position: relative;
+}
+
+.water-menu-button {
+  display: block;
+  background: #123d2a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 14px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.water-navbar .nav-links {
+  display: none !important;
+}
+
+.water-navbar .nav-links.show-menu {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  position: absolute;
+  top: 85px;
+  right: 6%;
+  width: 190px;
+  padding: 22px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.water-navbar .nav-links.show-menu a {
+  color: #123d2a !important;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.water-navbar .nav-links.show-menu a:hover {
+  color: #c89535 !important;
+}
+.water-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 6%;
+  min-height: 90px;
+  background: #fff;
+}
+
+.water-navbar .logo img {
+  width: 175px;
+  height: 85px;
+  object-fit: contain;
+}
+/* =====================================
+   TRADITIONAL WATER MANAGEMENT
+   AUDITORIUM READABILITY
+   ===================================== */
+
+/* Navigation */
+.water-navbar .nav-links a {
+  font-size: 18px;
+}
+
+/* Main heading */
+.water-navbar + .detail-header h1 {
+  font-size: clamp(38px, 3.5vw, 54px);
+  line-height: 1.25;
+}
+
+/* Header description */
+.water-navbar + .detail-header p {
+  font-size: clamp(19px, 1.5vw, 23px);
+  line-height: 1.7;
+}
+
+/* Main content */
+.water-content {
+  max-width: 1400px;
+}
+
+/* Section headings */
+.water-content .detail-card h2,
+.water-content .limitation-card h2 {
+  font-size: clamp(27px, 2.2vw, 34px);
+  line-height: 1.4;
+}
+
+/* Subheadings */
+.water-content .detail-card h3,
+.water-content .limitation-card h3,
+.water-content .knowledge-note h3 {
+  font-size: clamp(22px, 1.7vw, 26px);
+  line-height: 1.5;
+}
+
+/* Paragraphs */
+.water-content .detail-card p,
+.water-content .limitation-card p,
+.water-content .knowledge-note p {
+  font-size: clamp(19px, 1.4vw, 22px);
+  line-height: 1.8;
+}
+
+/* Lists */
+.water-content .detail-card li,
+.water-content .limitation-card li {
+  font-size: clamp(19px, 1.4vw, 22px);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+/* Process steps */
+.water-content .step-item h3 {
+  font-size: 23px;
+}
+
+.water-content .step-item p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.water-content .step-item > span {
+  font-size: 17px;
+}
+
+/* Flow diagram */
+.water-content .flow-box {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.water-content .flow-arrow {
+  font-size: 30px;
+}
+
+/* Example and note boxes */
+.water-content .simple-example h3 {
+  font-size: 23px;
+}
+
+.water-content .detail-note {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Back button */
+.water-content .detail-back {
+  font-size: 18px;
+  padding: 16px 30px;
+}
+
+/* Footer */
+.water-content + footer {
+  padding: 35px 20px;
+}
+
+.water-content + footer p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .water-navbar .nav-links a {
+    font-size: 15px;
+  }
+
+  .water-content .detail-card h2,
+  .water-content .limitation-card h2 {
+    font-size: 24px;
+  }
+
+  .water-content .detail-card p,
+  .water-content .limitation-card p,
+  .water-content .detail-card li,
+  .water-content .limitation-card li {
+    font-size: 17px;
+  }
+
+  .water-content .step-item h3 {
+    font-size: 19px;
+  }
+
+  .water-content .step-item p {
+    font-size: 16px;
+  }
+
+  .water-content .flow-box {
+    font-size: 17px;
+  }
+}
+/* Traditional water management cycle hover effects */
+
+.water-content .flow-box {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.water-content .flow-box:hover {
+  transform: translateY(-7px);
+  background: #286b43;
+  color: #ffffff;
+  border-color: #286b43;
+  box-shadow: 0 8px 20px rgba(40, 107, 67, 0.25);
+}
+
+.water-content .flow-box:hover * {
+  color: #ffffff !important;
+}
+
+.water-content .flow-arrow {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.water-content .flow-arrow:hover {
+  color: #286b43;
+  transform: scale(1.3);
+}
+/* =====================================
+   IAKIS BRAND COLOURS
+   QUESTIONS AND ANSWERS
+   ===================================== */
+
+/* Main questions */
+.water-content .detail-card h2,
+.water-content .limitation-card h2 {
+  color: #123d2a;
+}
+
+/* Subheadings */
+.water-content .detail-card h3,
+.water-content .limitation-card h3,
+.water-content .knowledge-note h3 {
+  color: #123d2a;
+}
+
+/* Answers and descriptions */
+.water-content .detail-card p,
+.water-content .detail-card li,
+.water-content .limitation-card p,
+.water-content .limitation-card li {
+  color: #53625a;
+}
+
+/* Important words */
+.water-content .detail-card strong,
+.water-content .limitation-card strong {
+  color: #123d2a;
+}
+/* IAKIS knowledge note - Premium brand design */
+
+.water-content .knowledge-note {
+  background: #f5f2e9;
+  border: 1px solid #d9dfd3;
+  border-left: 5px solid #c89535;
+  border-radius: 14px;
+  padding: 28px 30px;
+  box-shadow: 0 5px 16px rgba(18, 61, 42, 0.08);
+  transition: all 0.3s ease;
+}
+
+.water-content .knowledge-note:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 22px rgba(18, 61, 42, 0.13);
+}
+
+.water-content .knowledge-note h3 {
+  color: #123d2a;
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.water-content .knowledge-note p {
+  color: #53625a;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* =====================================
+   TRADITIONAL WATER MANAGEMENT
+   BACK BUTTON - FINAL FIX
+===================================== */
+
+.detail-back {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Single Button Box */
+
+.detail-back a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  padding: 13px 25px !important;
+  margin: 0 !important;
+
+  background: #ffffff !important;
+  color: #28683b !important;
+  border: 1px solid #43874e !important;
+  border-radius: 10px !important;
+
+  box-shadow: none !important;
+  transform: none !important;
+  text-decoration: none !important;
+
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease !important;
+}
+
+/* Same Size Dark Green Hover */
+
+.detail-back a:hover {
+  background: #174b2b !important;
+  color: #ffffff !important;
+  border-color: #174b2b !important;
+  box-shadow: none !important;
+  transform: none !important;
+}

@@ -1,0 +1,687 @@
+
+/* =========================================
+   RAJASTHAN LEARN MORE PAGE
+   IAKIS - Green and Golden Theme
+========================================= */
+
+.rajasthan-page {
+  min-height: 100vh;
+  background: #f7f8f3;
+  color: #26382d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.rajasthan-page .navbar {
+  min-height: 76px;
+  padding: 12px 7%;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e8eadf;
+}
+
+.rajasthan-page .logo img {
+  max-width: 165px;
+  max-height: 55px;
+  object-fit: contain;
+}
+
+/* HERO HEADER */
+
+.rajasthan-page .rajasthan-header {
+  width: 100%;
+  min-height: 440px;
+  padding: 65px 8%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+  background: linear-gradient(120deg, #123d29, #28683b);
+  color: #ffffff;
+}
+
+.rajasthan-page .rajasthan-header-content {
+  max-width: 580px;
+}
+
+.rajasthan-page .rajasthan-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 9px 16px;
+  border: 1px solid rgba(235, 204, 128, 0.55);
+  border-radius: 30px;
+  color: #f0d28d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.rajasthan-page .rajasthan-header h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 58px;
+  line-height: 1.15;
+}
+
+.rajasthan-page .rajasthan-header-content > p {
+  max-width: 540px;
+  margin: 0 0 28px;
+  color: #e2eee3;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.rajasthan-page .rajasthan-start-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 5px;
+  background: #e5c47e;
+  color: #243b2b;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.rajasthan-page .rajasthan-start-btn:hover {
+  background: #f3daa1;
+  transform: translateY(-3px);
+}
+
+.rajasthan-page .rajasthan-hero-image {
+  height: 310px;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.17);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+.rajasthan-page .rajasthan-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* MAIN CONTENT */
+
+.rajasthan-page .rajasthan-content {
+  width: 86%;
+  max-width: 1100px;
+  margin: 55px auto 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* CONTENT CARDS */
+
+.rajasthan-page .rajasthan-card {
+  padding: 36px 40px;
+  background: #ffffff;
+  border: 1px solid #e8eadf;
+  border-left: 5px solid #39834b;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(35, 61, 40, 0.045);
+  scroll-margin-top: 25px;
+  transition: box-shadow 0.25s ease;
+}
+
+.rajasthan-page .rajasthan-card:hover {
+  box-shadow: 0 9px 27px rgba(35, 61, 40, 0.09);
+}
+
+.rajasthan-page .rajasthan-number {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: #a47a31;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.rajasthan-page .rajasthan-card h2 {
+  margin: 0 0 19px;
+  color: #204d32;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  line-height: 1.4;
+}
+
+.rajasthan-page .rajasthan-card h3 {
+  color: #315e3b;
+}
+
+.rajasthan-page .rajasthan-card p {
+  margin: 0 0 15px;
+  color: #515d53;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.rajasthan-page .rajasthan-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* SUBHEADINGS */
+
+.rajasthan-page .rajasthan-subheading {
+  margin: 28px 0 17px;
+  padding-left: 13px;
+  border-left: 4px solid #d4b46e;
+  color: #315e3b;
+  font-size: 20px;
+}
+
+/* SIMPLE EXAMPLE */
+
+.rajasthan-page .rajasthan-example {
+  margin-top: 22px;
+  padding: 19px 22px;
+  background: #f5f8ee;
+  border: 1px solid #e5e9d9;
+  border-radius: 8px;
+}
+
+.rajasthan-page .rajasthan-example h3 {
+  margin: 0 0 9px;
+  color: #376d43;
+  font-size: 16px;
+}
+
+.rajasthan-page .rajasthan-example p {
+  margin: 0;
+}
+
+/* IMPORTANT NOTE */
+
+.rajasthan-page .rajasthan-note {
+  margin-top: 22px;
+  padding: 17px 20px;
+  background: #fff8e9;
+  border-left: 4px solid #d5ad57;
+  border-radius: 5px;
+  color: #665431;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* FEATURE GRID */
+
+.rajasthan-page .rajasthan-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin-top: 23px;
+}
+
+.rajasthan-page .rajasthan-feature {
+  min-width: 0;
+  padding: 22px 19px;
+  background: #f7f9f4;
+  border: 1px solid #e8eddf;
+  border-radius: 9px;
+  transition: 0.25s ease;
+}
+
+.rajasthan-page .rajasthan-feature:hover {
+  transform: translateY(-4px);
+  border-color: #b9cfae;
+  box-shadow: 0 7px 18px rgba(35, 61, 40, 0.07);
+}
+
+.rajasthan-page .rajasthan-feature > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 27px;
+}
+
+.rajasthan-page .rajasthan-feature h3 {
+  margin: 0 0 9px;
+  color: #315e3b;
+  font-size: 16px;
+}
+
+.rajasthan-page .rajasthan-feature p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* VARIETY GRID */
+
+.rajasthan-page .rajasthan-variety-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.rajasthan-page .rajasthan-variety {
+  padding: 21px 23px;
+  background: #fafaf6;
+  border: 1px solid #e9eadf;
+  border-radius: 8px;
+}
+
+.rajasthan-page .rajasthan-variety h3 {
+  margin: 0 0 11px;
+  color: #32653e;
+  font-size: 17px;
+}
+
+.rajasthan-page .rajasthan-variety p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* LISTS */
+
+.rajasthan-page .rajasthan-list {
+  margin: 18px 0;
+  padding-left: 23px;
+}
+
+.rajasthan-page .rajasthan-list li {
+  padding-left: 5px;
+  margin-bottom: 12px;
+  color: #515d53;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.rajasthan-page .rajasthan-list li::marker {
+  color: #47834d;
+}
+
+/* TRADITIONAL PROCESS */
+
+.rajasthan-page .rajasthan-process {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.rajasthan-page .rajasthan-process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  padding: 19px 21px;
+  background: #f7f9f4;
+  border: 1px solid #e8eddf;
+  border-radius: 9px;
+  transition: transform 0.3s ease, background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-process-step > span {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #28683b;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-process-step h3 {
+  margin: 1px 0 7px;
+  color: #315e3b;
+  font-size: 17px;
+}
+
+.rajasthan-page .rajasthan-process-step p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.rajasthan-page .rajasthan-process-step:hover {
+  transform: translateX(6px);
+  background: #edf4e9;
+  box-shadow: 0 6px 16px rgba(35, 61, 40, 0.08);
+}
+
+.rajasthan-page .rajasthan-process-step:hover > span {
+  transform: scale(1.1);
+  background: #d0a951;
+  color: #24452d;
+}
+
+/* CONCLUSION */
+
+.rajasthan-page .rajasthan-conclusion {
+  padding: 42px;
+  background: linear-gradient(145deg, #ffffff, #f5f8ef);
+  border-left-color: #d0a951;
+  text-align: center;
+}
+
+.rajasthan-page .rajasthan-conclusion-icon {
+  margin: 8px 0 15px;
+  font-size: 42px;
+}
+
+.rajasthan-page .rajasthan-conclusion h2 {
+  color: #245b36;
+}
+
+.rajasthan-page .rajasthan-conclusion p {
+  max-width: 850px;
+  margin: 0 auto 15px;
+  text-align: left;
+}
+
+.rajasthan-page .rajasthan-final-message {
+  max-width: 850px;
+  margin: 26px auto 0;
+  padding: 20px;
+  background: #eaf2e5;
+  border-radius: 8px;
+  color: #285d37;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* BACK TO REGIONS */
+
+.rajasthan-page .rajasthan-back {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 5px;
+}
+
+.rajasthan-page .rajasthan-back a {
+  display: inline-block;
+  padding: 13px 29px;
+  background: #28683b;
+  border: 1px solid #28683b;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.rajasthan-page .rajasthan-back a:hover {
+  background: #194d2c;
+  border-color: #194d2c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(40, 104, 59, 0.18);
+}
+
+/* FOOTER */
+
+.rajasthan-page .rajasthan-footer {
+  width: 100%;
+  background: #153d29;
+  color: #ffffff;
+}
+
+.rajasthan-page .rajasthan-footer-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 6% 25px;
+  text-align: center;
+}
+
+.rajasthan-page .rajasthan-footer-content h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.rajasthan-page .rajasthan-footer-content p {
+  margin: 7px 0 22px;
+  color: #d4e6d7;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.rajasthan-page .rajasthan-footer-bottom {
+  padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #c9ddcd;
+  font-size: 13px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .rajasthan-page .rajasthan-header {
+    padding: 55px 6%;
+    gap: 30px;
+  }
+
+  .rajasthan-page .rajasthan-header h1 {
+    font-size: 48px;
+  }
+
+  .rajasthan-page .rajasthan-hero-image {
+    height: 270px;
+  }
+
+  .rajasthan-page .rajasthan-content {
+    width: 91%;
+  }
+
+  .rajasthan-page .rajasthan-card {
+    padding: 30px;
+  }
+
+  .rajasthan-page .rajasthan-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+  .rajasthan-page .navbar {
+    min-height: 65px;
+    padding: 10px 5%;
+  }
+
+  .rajasthan-page .logo img {
+    max-width: 145px;
+    max-height: 48px;
+  }
+
+  .rajasthan-page .rajasthan-header {
+    grid-template-columns: 1fr;
+    padding: 43px 6% 40px;
+    gap: 29px;
+  }
+
+  .rajasthan-page .rajasthan-header h1 {
+    font-size: 39px;
+  }
+
+  .rajasthan-page .rajasthan-header-content > p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .rajasthan-page .rajasthan-hero-image {
+    height: 225px;
+  }
+
+  .rajasthan-page .rajasthan-content {
+    width: 92%;
+    margin: 30px auto 45px;
+    gap: 19px;
+  }
+
+  .rajasthan-page .rajasthan-card {
+    padding: 24px 19px;
+    border-radius: 10px;
+  }
+
+  .rajasthan-page .rajasthan-card h2 {
+    font-size: 23px;
+  }
+
+  .rajasthan-page .rajasthan-card p,
+  .rajasthan-page .rajasthan-list li {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .rajasthan-page .rajasthan-feature-grid,
+  .rajasthan-page .rajasthan-variety-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rajasthan-page .rajasthan-process-step {
+    gap: 13px;
+    padding: 16px 13px;
+  }
+
+  .rajasthan-page .rajasthan-process-step > span {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .rajasthan-page .rajasthan-process-step h3 {
+    font-size: 15px;
+  }
+
+  .rajasthan-page .rajasthan-process-step p {
+    font-size: 13px;
+  }
+
+  .rajasthan-page .rajasthan-conclusion {
+    padding: 27px 19px;
+  }
+
+  .rajasthan-page .rajasthan-conclusion h2 {
+    font-size: 23px;
+  }
+
+  .rajasthan-page .rajasthan-footer-content {
+    padding: 32px 6% 22px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+
+  .rajasthan-page .rajasthan-header h1 {
+    font-size: 34px;
+  }
+
+  .rajasthan-page .rajasthan-card {
+    padding: 21px 15px;
+  }
+
+  .rajasthan-page .rajasthan-card h2 {
+    font-size: 21px;
+  }
+
+  .rajasthan-page .rajasthan-feature {
+    padding: 18px 15px;
+  }
+}
+
+/* =====================================
+   RAJASTHAN PAGE - HOVER EFFECTS
+===================================== */
+
+/* Smooth card effects */
+
+.rajasthan-page .rajasthan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(35, 61, 40, 0.10);
+  border-left-color: #d0a951;
+}
+
+/* Feature card effects */
+
+.rajasthan-page .rajasthan-feature {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-feature:hover {
+  transform: translateY(-6px);
+  background: #eef4e9;
+  box-shadow: 0 9px 20px rgba(35, 61, 40, 0.12);
+}
+
+/* Variety card effects */
+
+.rajasthan-page .rajasthan-variety {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-variety:hover {
+  transform: translateY(-5px);
+  border-color: #9dbb91;
+  box-shadow: 0 8px 19px rgba(35, 61, 40, 0.09);
+}
+
+/* Hero image zoom */
+
+.rajasthan-page .rajasthan-hero-image {
+  overflow: hidden;
+}
+
+.rajasthan-page .rajasthan-hero-image img {
+  transition: transform 0.6s ease;
+}
+
+.rajasthan-page .rajasthan-hero-image:hover img {
+  transform: scale(1.06);
+}
+
+/* Button effects */
+
+.rajasthan-page .rajasthan-start-btn,
+.rajasthan-page .rajasthan-back a {
+  transition: all 0.3s ease;
+}
+
+/* Note effects */
+
+.rajasthan-page .rajasthan-note,
+.rajasthan-page .rajasthan-example {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rajasthan-page .rajasthan-note:hover,
+.rajasthan-page .rajasthan-example:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(35, 61, 40, 0.07);
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .rajasthan-page *,
+  .rajasthan-page *::before,
+  .rajasthan-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

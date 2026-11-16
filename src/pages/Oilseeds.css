@@ -1,0 +1,638 @@
+
+/* ================================
+   Oilseeds page
+================================ */
+
+.oilseeds-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7faf6;
+  color: #26352a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.oilseeds-page nav {
+  width: 100%;
+  min-height: 75px;
+  padding: 12px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  position: relative;
+  z-index: 10;
+}
+
+.oilseeds-page nav img {
+  max-width: 165px;
+  height: auto;
+  object-fit: contain;
+}
+
+.oilseeds-page nav a {
+  color: #245b35;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.oilseeds-page nav a:hover {
+  color: #e19b36;
+}
+
+/* Hero section */
+
+.oilseeds-page .millet-header {
+  width: 100%;
+  min-height: 420px;
+  padding: 65px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  background: linear-gradient(
+    135deg,
+    #174b2a 0%,
+    #246239 55%,
+    #367849 100%
+  );
+  overflow: hidden;
+}
+
+.oilseeds-page .millet-header-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+.oilseeds-page .millet-tag {
+  display: inline-block;
+  padding: 8px 17px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.13);
+  color: #e8f5e9;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.oilseeds-page .millet-header h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.18;
+  font-weight: 750;
+}
+
+.oilseeds-page .millet-header p {
+  max-width: 590px;
+  margin: 0 0 28px;
+  color: #e5f1e7;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.oilseeds-page .millet-learn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 27px;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #205a32;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.oilseeds-page .millet-learn-btn:hover {
+  background: #e6f2e7;
+  color: #174b2a;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.16);
+}
+
+.oilseeds-page .millet-header-image {
+  flex: 1;
+  max-width: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oilseeds-page .millet-header-image img {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.23);
+}
+
+/* Main content */
+
+.oilseeds-page .millet-content {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 55px 35px 70px;
+}
+
+.oilseeds-page .millet-intro {
+  max-width: 950px;
+  margin: 0 auto 40px;
+  padding: 25px 30px;
+  border-left: 5px solid #347b46;
+  border-radius: 8px;
+  background: #edf5ed;
+  box-shadow: 0 4px 15px rgba(35, 83, 45, 0.06);
+}
+
+.oilseeds-page .millet-intro h2 {
+  margin: 0 0 13px;
+  color: #205b32;
+  font-size: 25px;
+}
+
+.oilseeds-page .millet-intro p {
+  margin: 0;
+  color: #4c5d50;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* Question and answer cards */
+
+.oilseeds-page .millet-card {
+  margin-bottom: 25px;
+  padding: 27px 30px;
+  border: 1px solid #e1eae1;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(27, 67, 37, 0.055);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 25px;
+}
+
+.oilseeds-page .millet-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 25px rgba(27, 67, 37, 0.11);
+}
+
+.oilseeds-page .millet-card h2 {
+  margin: 0 0 17px;
+  color: #205b32;
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.oilseeds-page .millet-card h3 {
+  margin: 20px 0 10px;
+  color: #347747;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.oilseeds-page .millet-card p {
+  margin: 0 0 13px;
+  color: #4b574e;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.oilseeds-page .millet-card p:last-child {
+  margin-bottom: 0;
+}
+
+.oilseeds-page .millet-card ul,
+.oilseeds-page .millet-card ol {
+  margin: 12px 0 17px;
+  padding-left: 25px;
+}
+
+.oilseeds-page .millet-card li {
+  margin-bottom: 9px;
+  padding-left: 4px;
+  color: #4b574e;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.oilseeds-page .millet-card li::marker {
+  color: #39804b;
+}
+
+/* Highlighted information */
+
+.oilseeds-page .millet-card strong {
+  color: #285f37;
+  font-weight: 700;
+}
+
+.oilseeds-page .millet-card blockquote {
+  margin: 18px 0;
+  padding: 15px 20px;
+  border-left: 4px solid #579866;
+  border-radius: 5px;
+  background: #f0f7f0;
+  color: #365940;
+  line-height: 1.8;
+}
+
+/* Conclusion */
+
+.oilseeds-page .millet-card.millet-conclusion {
+  margin-top: 35px;
+  padding: 30px;
+  border: 1px solid #cfe2d1;
+  border-left: 5px solid #286b3b;
+  background: linear-gradient(135deg, #edf6ed, #f8fbf7);
+}
+
+.oilseeds-page .millet-card.millet-conclusion h2 {
+  color: #1e5b32;
+  font-size: 24px;
+}
+
+.oilseeds-page .millet-card.millet-conclusion p {
+  color: #405b46;
+}
+
+/* Back to crops */
+
+.oilseeds-page .millet-content > a:last-child {
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 12px 22px;
+  border-radius: 7px;
+  background: #286b3b;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.oilseeds-page .millet-content > a:last-child:hover {
+  background: #174b2a;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+
+.oilseeds-page footer {
+  width: 100%;
+  padding: 28px 7%;
+  background: #174b2a;
+  color: #eaf3eb;
+  text-align: center;
+}
+
+.oilseeds-page footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Tablet responsive */
+
+@media (max-width: 900px) {
+  .oilseeds-page .millet-header {
+    min-height: auto;
+    padding: 55px 6%;
+    gap: 30px;
+  }
+
+  .oilseeds-page .millet-header h1 {
+    font-size: 38px;
+  }
+
+  .oilseeds-page .millet-header-image {
+    max-width: 380px;
+  }
+
+  .oilseeds-page .millet-content {
+    padding: 45px 25px 55px;
+  }
+}
+
+/* Mobile responsive */
+
+@media (max-width: 650px) {
+  .oilseeds-page nav {
+    padding: 12px 5%;
+    min-height: 65px;
+  }
+
+  .oilseeds-page nav img {
+    max-width: 125px;
+  }
+
+  .oilseeds-page .millet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 6%;
+    gap: 30px;
+  }
+
+  .oilseeds-page .millet-header-content {
+    width: 100%;
+  }
+
+  .oilseeds-page .millet-header h1 {
+    font-size: 34px;
+  }
+
+  .oilseeds-page .millet-header p {
+    font-size: 15px;
+  }
+
+  .oilseeds-page .millet-header-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .oilseeds-page .millet-header-image img {
+    max-height: 260px;
+  }
+
+  .oilseeds-page .millet-content {
+    padding: 35px 16px 45px;
+  }
+
+  .oilseeds-page .millet-intro {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .oilseeds-page .millet-intro h2 {
+    font-size: 21px;
+  }
+
+  .oilseeds-page .millet-card {
+    padding: 21px 18px;
+    margin-bottom: 18px;
+  }
+
+  .oilseeds-page .millet-card h2 {
+    font-size: 19px;
+  }
+
+  .oilseeds-page .millet-card h3 {
+    font-size: 16px;
+  }
+
+  .oilseeds-page .millet-card p,
+  .oilseeds-page .millet-card li {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .oilseeds-page .millet-card.millet-conclusion {
+    padding: 22px 18px;
+  }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 380px) {
+  .oilseeds-page .millet-header h1 {
+    font-size: 29px;
+  }
+
+  .oilseeds-page .millet-card h2 {
+    font-size: 18px;
+  }
+
+  .oilseeds-page .millet-learn-btn {
+    padding: 11px 20px;
+  }
+}
+
+/* =====================================
+   Oilseeds - Final conclusion correction
+   Match the accepted Millets layout
+===================================== */
+
+/* Conclusion card */
+.oilseeds-page .millet-card.millet-conclusion {
+  display: block !important;
+  width: 100%;
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+  padding: 40px 42px !important;
+
+  text-align: left !important;
+
+  border: 1px solid #d6e6d6 !important;
+  border-left: 5px solid #286b3b !important;
+  border-radius: 10px !important;
+
+  background: linear-gradient(120deg, #edf6ed, #f8fbf7) !important;
+  box-shadow: 0 4px 15px rgba(34, 75, 42, 0.08) !important;
+}
+
+/* Conclusion numbering */
+.oilseeds-page .millet-card.millet-conclusion .millet-number {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 13px !important;
+  padding: 0 !important;
+
+  text-align: left !important;
+  color: #39804b !important;
+  font-size: 14px !important;
+  font-weight: 750 !important;
+
+  background: transparent !important;
+}
+
+/* Conclusion heading */
+.oilseeds-page .millet-card.millet-conclusion h2 {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 17px !important;
+
+  text-align: left !important;
+  color: #245d35 !important;
+  font-size: 24px !important;
+  line-height: 1.45;
+}
+
+/* Conclusion paragraphs */
+.oilseeds-page .millet-card.millet-conclusion p {
+  width: 100%;
+  margin: 0 0 14px !important;
+
+  text-align: left !important;
+  color: #4d5b50 !important;
+  font-size: 15px !important;
+  line-height: 1.85 !important;
+}
+
+.oilseeds-page .millet-card.millet-conclusion p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Back to crops button */
+.oilseeds-page .millet-content > .millet-back-btn {
+  display: table !important;
+  width: auto !important;
+  max-width: max-content !important;
+
+  margin: 0 auto 15px !important;
+  padding: 13px 22px !important;
+
+  border: none !important;
+  border-radius: 7px !important;
+
+  background: #286b3b !important;
+  color: #ffffff !important;
+
+  text-align: center !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  box-shadow: none !important;
+  transition: background 0.3s ease !important;
+}
+
+.oilseeds-page .millet-content > .millet-back-btn:hover {
+  background: #174b2a !important;
+}
+
+/* Mobile correction */
+@media (max-width: 650px) {
+  .oilseeds-page .millet-card.millet-conclusion {
+    padding: 24px 19px !important;
+  }
+
+  .oilseeds-page .millet-card.millet-conclusion h2 {
+    font-size: 21px !important;
+  }
+
+  .oilseeds-page .millet-content > .millet-back-btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* =====================================
+   Oilseeds conclusion - exact Millets style
+===================================== */
+
+.oilseeds-page .millet-card.millet-conclusion {
+  width: 100%;
+  margin: 35px 0 45px !important;
+  padding: 30px 11% 40px !important;
+
+  border: 1px solid #e5e8d9 !important;
+  border-left: 5px solid #d5aa49 !important;
+  border-radius: 12px !important;
+
+  background: linear-gradient(120deg, #f5f8ef, #ffffff) !important;
+  box-shadow: 0 12px 25px rgba(40, 70, 40, 0.09) !important;
+
+  text-align: left !important;
+}
+
+/* Number */
+.oilseeds-page .millet-card.millet-conclusion .millet-number {
+  display: block;
+  margin: 0 0 24px !important;
+  text-align: center !important;
+  color: #b47b20 !important;
+  font-size: 13px !important;
+  letter-spacing: 1px;
+}
+
+/* Crop icon */
+.oilseeds-page .millet-card.millet-conclusion .conclusion-icon {
+  margin: 0 auto 12px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.3;
+}
+
+/* Main heading */
+.oilseeds-page .millet-card.millet-conclusion h2 {
+  margin: 0 0 24px !important;
+  color: #155b3a !important;
+  font-size: 30px !important;
+  line-height: 1.35;
+  text-align: center !important;
+}
+
+/* Explanation */
+.oilseeds-page .millet-card.millet-conclusion p {
+  margin: 0 0 17px !important;
+  color: #45564b !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+  text-align: left !important;
+}
+
+/* Final highlighted message */
+.oilseeds-page .millet-card.millet-conclusion .conclusion-highlight {
+  margin-top: 25px;
+  padding: 22px 25px;
+  border-radius: 9px;
+  background: #eaf2e5;
+  color: #205b3d;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+/* Back button wrapper */
+.oilseeds-page .millet-back-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+/* Back button */
+.oilseeds-page .millet-back-wrapper .millet-back-btn {
+  display: inline-block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 12px 24px !important;
+
+  border-radius: 6px !important;
+  background: #286b3b !important;
+  color: #ffffff !important;
+
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+
+.oilseeds-page .millet-back-wrapper .millet-back-btn:hover {
+  background: #174b2a !important;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .oilseeds-page .millet-card.millet-conclusion {
+    padding: 25px 20px 28px !important;
+  }
+
+  .oilseeds-page .millet-card.millet-conclusion h2 {
+    font-size: 23px !important;
+  }
+
+  .oilseeds-page .millet-card.millet-conclusion .conclusion-highlight {
+    padding: 17px;
+    font-size: 14px;
+  }
+}

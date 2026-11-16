@@ -1,0 +1,828 @@
+/* =========================================
+   IAKIS - Practices Page
+   Premium Academic Agricultural Design
+   ========================================= */
+
+.practice-page {
+  min-height: 100vh;
+  background: #f7f5ee;
+}
+
+/* ================= PAGE HEADER ================= */
+
+.page-header {
+  position: relative;
+  padding: 105px 8% 90px;
+  text-align: center;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(8, 45, 30, 0.98),
+      rgba(25, 92, 58, 0.94)
+    );
+  color: white;
+  overflow: hidden;
+}
+
+/* Decorative circles */
+.page-header::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  top: -300px;
+  left: -150px;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  bottom: -390px;
+  right: -180px;
+}
+
+/* Small heading */
+
+.page-header .section-label {
+  position: relative;
+  z-index: 2;
+  color: #e9bd5a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* Main heading */
+
+.page-header h1 {
+  position: relative;
+  z-index: 2;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: 1.08;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: white;
+  letter-spacing: -0.8px;
+}
+
+/* Description */
+
+.page-header > p:last-child {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: auto;
+  color: #e1eee6;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+/* ================= PRACTICE SECTION ================= */
+
+.practice-section {
+  padding: 100px 7%;
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(200, 149, 53, 0.09),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(31, 107, 69, 0.07),
+      transparent 28%
+    ),
+    #f7f5ee;
+}
+
+.practice-grid {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ================= PRACTICE CARD ================= */
+
+.practice-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 40px 34px 38px;
+  min-height: 365px;
+
+  border: 1px solid #e1e5de;
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 28px rgba(18, 61, 42, 0.07);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Golden top line */
+
+.practice-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background: linear-gradient(
+    90deg,
+    #c89535,
+    #e3bd68,
+    #1f6b45
+  );
+}
+
+/* Decorative circle */
+
+.practice-card::after {
+  content: "";
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  right: -75px;
+  bottom: -75px;
+
+  border-radius: 50%;
+
+  background: rgba(31, 107, 69, 0.045);
+
+  transition: 0.4s ease;
+}
+
+/* Hover */
+
+.practice-card:hover {
+  transform: translateY(-12px);
+
+  border-color: rgba(200, 149, 53, 0.55);
+
+  box-shadow:
+    0 22px 48px rgba(18, 61, 42, 0.15);
+}
+
+.practice-card:hover::after {
+  transform: scale(1.5);
+}
+
+/* ================= ICON ================= */
+
+.practice-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #edf6ef,
+      #e2f0e6
+    );
+
+  border: 1px solid #d6e6db;
+
+  border-radius: 50%;
+
+  font-size: 32px;
+
+  margin-bottom: 27px;
+
+  box-shadow:
+    0 7px 18px rgba(31, 107, 69, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.practice-card:hover .practice-icon {
+  transform: scale(1.1) rotate(-5deg);
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7ecd6,
+      #f2dfb7
+    );
+
+  box-shadow:
+    0 10px 25px rgba(200, 149, 53, 0.18);
+}
+
+/* ================= CARD TEXT ================= */
+
+.practice-card h2 {
+  position: relative;
+  z-index: 2;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 24px;
+  line-height: 1.3;
+
+  color: #123d2a;
+
+  margin-bottom: 15px;
+}
+
+.practice-card p {
+  position: relative;
+  z-index: 2;
+
+  color: #68736c;
+
+  font-size: 14px;
+  line-height: 1.85;
+
+  margin-bottom: 24px;
+}
+
+/* Small category label */
+
+.practice-card span {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+
+  background: #f3f0e7;
+
+  border-left: 3px solid #c89535;
+
+  color: #526158;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  transition: 0.3s ease;
+}
+
+.practice-card:hover span {
+  background: #f5ead1;
+  color: #123d2a;
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-home {
+  padding: 0 7% 90px;
+
+  background: #f7f5ee;
+
+  text-align: center;
+}
+
+.back-home a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 14px 25px;
+
+  color: #1f6b45;
+
+  background: white;
+
+  border: 1px solid #d8e2db;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 20px rgba(18, 61, 42, 0.07);
+
+  transition: 0.3s ease;
+}
+
+.back-home a:hover {
+  color: white;
+
+  background: #1f6b45;
+
+  border-color: #1f6b45;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 25px rgba(31, 107, 69, 0.18);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 62px 7% 32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0d3423,
+      #123d2a
+    );
+
+  color: white;
+
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 27px;
+
+  margin-bottom: 13px;
+}
+
+footer p {
+  color: #cbd9d0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+footer .copyright {
+  margin-top: 28px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+  color: #9fb4a7;
+
+  font-size: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+
+  .practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-header {
+    padding: 85px 6%;
+  }
+
+  .practice-section {
+    padding: 80px 6%;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    padding: 72px 6%;
+  }
+
+  .page-header h1 {
+    font-size: 40px;
+  }
+
+  .page-header > p:last-child {
+    font-size: 14px;
+  }
+
+  .practice-section {
+    padding: 65px 6%;
+  }
+
+  .practice-card {
+    min-height: auto;
+    padding: 34px 27px;
+  }
+}
+
+/* ================= LEARN MORE LINK ================= */
+
+.practice-card .learn-more {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  color: #1f6b45;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.practice-card .learn-more:hover {
+  color: #c89535;
+  gap: 13px;
+}
+.practice-card .learn-more {
+  display: flex;
+  width: fit-content;
+  margin-top: 18px;
+}
+/* ================= PRACTICE IMAGES ================= */
+
+.practice-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #e1e5de;
+  box-shadow: 0 5px 15px rgba(18, 61, 42, 0.10);
+  transition: transform 0.35s ease;
+}
+
+.practice-card:hover .practice-image {
+  transform: scale(1.02);
+}
+/* Equal Height Practice Cards */
+
+.practice-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 560px;
+}
+
+.practice-card .practice-image {
+  flex-shrink: 0;
+}
+
+.practice-card h2 {
+  min-height: 62px;
+}
+
+.practice-card p {
+  flex-grow: 1;
+}
+
+.practice-card .learn-more {
+  margin-top: auto;
+}
+/* =====================================
+   PRACTICES PAGE - FONT IMPROVEMENTS
+   ===================================== */
+
+/* Main Page Font */
+.practice-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Small Heading */
+.page-header .section-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+/* Main Page Heading */
+.page-header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 4.5vw, 64px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+/* Page Description */
+.page-header > p:last-child {
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Practice Card Heading */
+.practice-card h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(21px, 1.8vw, 26px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* Practice Card Description */
+.practice-card p {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: clamp(15px, 1.15vw, 17px);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* Card Category Label */
+.practice-card span {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+/* Learn More Link */
+.practice-card .learn-more {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Back to Home Button */
+.back-home a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Footer Heading */
+footer h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* Footer Description */
+footer p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Copyright */
+footer .copyright {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Mobile Font Sizes */
+@media (max-width: 650px) {
+
+  .page-header .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .page-header > p:last-child {
+    font-size: 15px;
+  }
+
+  .practice-card h2 {
+    font-size: 23px;
+    min-height: auto;
+  }
+
+  .practice-card p {
+    font-size: 15px;
+  }
+
+  .practice-card span {
+    font-size: 12px;
+  }
+
+  .practice-card .learn-more {
+    font-size: 15px;
+  }
+
+  footer h3 {
+    font-size: 22px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+/* =====================================
+   PRACTICE CARDS - ALIGNMENT IMPROVEMENT
+   ===================================== */
+
+.practice-section {
+  padding: 80px 6%;
+}
+
+.practice-grid {
+  max-width: 1500px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+.practice-card {
+  padding: 28px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.practice-card .practice-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.practice-card h2 {
+  min-height: 65px;
+  margin-bottom: 12px;
+}
+
+.practice-card p {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.practice-card span {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.practice-card .learn-more {
+  margin-top: 22px;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .practice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .practice-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .practice-card {
+    padding: 24px;
+  }
+
+  .practice-card .practice-image {
+    height: 200px;
+  }
+
+  .practice-card h2 {
+    min-height: auto;
+  }
+}
+/* =====================================
+   PREMIUM CARD HOVER EFFECT
+   ===================================== */
+
+.practice-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practice-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(18, 61, 42, 0.15);
+}
+
+.practice-card .practice-image {
+  transition: transform 0.4s ease;
+}
+
+.practice-card:hover .practice-image {
+  transform: scale(1.03);
+}
+
+.practice-card .learn-more {
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.practice-card .learn-more:hover {
+  color: #c89535;
+  gap: 12px;
+}
+/* PRACTICES PAGE LOGO DESIGN */
+
+.practice-page .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.practice-page .logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.practice-page .logo-fullform {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  line-height: 1.6;
+  text-align: center;
+  color: #17452f;
+  margin: 5px 0 0;
+  max-width: 300px;
+}
+/* Reduce Logo and Full Form Gap */
+
+.practice-page .logo {
+  gap: 0 !important;
+}
+
+.practice-page .logo-fullform {
+  margin-top: -8px !important;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 13px;
+}
+/* =====================================
+   PRACTICES PAGE FOOTER
+   ===================================== */
+
+.practice-page .practices-footer {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  box-sizing: border-box;
+  padding: 55px 7% 30px !important;
+  margin: 0;
+  background: linear-gradient(135deg, #0d3423, #123d2a);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.practice-page .practices-footer h3 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 27px;
+  line-height: 1.4;
+}
+
+.practice-page .practices-footer p {
+  margin: 0;
+  color: #cbd9d0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.practice-page .practices-footer .copyright {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #a9bdb0;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .practice-page .practices-footer {
+    min-height: 200px;
+    padding: 40px 6% 25px !important;
+  }
+
+  .practice-page .practices-footer h3 {
+    font-size: 21px;
+  }
+
+  .practice-page .practices-footer p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,687 @@
+
+/* =========================================
+   NORTH EAST INDIA LEARN MORE PAGE
+   IAKIS - Green and Golden Theme
+========================================= */
+
+.north-east-page {
+  min-height: 100vh;
+  background: #f7f8f3;
+  color: #26382d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.north-east-page .navbar {
+  min-height: 76px;
+  padding: 12px 7%;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e8eadf;
+}
+
+.north-east-page .logo img {
+  max-width: 165px;
+  max-height: 55px;
+  object-fit: contain;
+}
+
+/* HERO HEADER */
+
+.north-east-page .north-east-header {
+  width: 100%;
+  min-height: 440px;
+  padding: 65px 8%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+  background: linear-gradient(120deg, #123d29, #28683b);
+  color: #ffffff;
+}
+
+.north-east-page .north-east-header-content {
+  max-width: 580px;
+}
+
+.north-east-page .north-east-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 9px 16px;
+  border: 1px solid rgba(235, 204, 128, 0.55);
+  border-radius: 30px;
+  color: #f0d28d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.north-east-page .north-east-header h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 58px;
+  line-height: 1.15;
+}
+
+.north-east-page .north-east-header-content > p {
+  max-width: 540px;
+  margin: 0 0 28px;
+  color: #e2eee3;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.north-east-page .north-east-start-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 5px;
+  background: #e5c47e;
+  color: #243b2b;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.north-east-page .north-east-start-btn:hover {
+  background: #f3daa1;
+  transform: translateY(-3px);
+}
+
+.north-east-page .north-east-hero-image {
+  height: 310px;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.17);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+.north-east-page .north-east-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* MAIN CONTENT */
+
+.north-east-page .north-east-content {
+  width: 86%;
+  max-width: 1100px;
+  margin: 55px auto 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* CONTENT CARDS */
+
+.north-east-page .north-east-card {
+  padding: 36px 40px;
+  background: #ffffff;
+  border: 1px solid #e8eadf;
+  border-left: 5px solid #39834b;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(35, 61, 40, 0.045);
+  scroll-margin-top: 25px;
+  transition: box-shadow 0.25s ease;
+}
+
+.north-east-page .north-east-card:hover {
+  box-shadow: 0 9px 27px rgba(35, 61, 40, 0.09);
+}
+
+.north-east-page .north-east-number {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: #a47a31;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.north-east-page .north-east-card h2 {
+  margin: 0 0 19px;
+  color: #204d32;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  line-height: 1.4;
+}
+
+.north-east-page .north-east-card h3 {
+  color: #315e3b;
+}
+
+.north-east-page .north-east-card p {
+  margin: 0 0 15px;
+  color: #515d53;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.north-east-page .north-east-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* SUBHEADINGS */
+
+.north-east-page .north-east-subheading {
+  margin: 28px 0 17px;
+  padding-left: 13px;
+  border-left: 4px solid #d4b46e;
+  color: #315e3b;
+  font-size: 20px;
+}
+
+/* SIMPLE EXAMPLE */
+
+.north-east-page .north-east-example {
+  margin-top: 22px;
+  padding: 19px 22px;
+  background: #f5f8ee;
+  border: 1px solid #e5e9d9;
+  border-radius: 8px;
+}
+
+.north-east-page .north-east-example h3 {
+  margin: 0 0 9px;
+  color: #376d43;
+  font-size: 16px;
+}
+
+.north-east-page .north-east-example p {
+  margin: 0;
+}
+
+/* IMPORTANT NOTE */
+
+.north-east-page .north-east-note {
+  margin-top: 22px;
+  padding: 17px 20px;
+  background: #fff8e9;
+  border-left: 4px solid #d5ad57;
+  border-radius: 5px;
+  color: #665431;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* FEATURE GRID */
+
+.north-east-page .north-east-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin-top: 23px;
+}
+
+.north-east-page .north-east-feature {
+  min-width: 0;
+  padding: 22px 19px;
+  background: #f7f9f4;
+  border: 1px solid #e8eddf;
+  border-radius: 9px;
+  transition: 0.25s ease;
+}
+
+.north-east-page .north-east-feature:hover {
+  transform: translateY(-4px);
+  border-color: #b9cfae;
+  box-shadow: 0 7px 18px rgba(35, 61, 40, 0.07);
+}
+
+.north-east-page .north-east-feature > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 27px;
+}
+
+.north-east-page .north-east-feature h3 {
+  margin: 0 0 9px;
+  color: #315e3b;
+  font-size: 16px;
+}
+
+.north-east-page .north-east-feature p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* VARIETY GRID */
+
+.north-east-page .north-east-variety-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.north-east-page .north-east-variety {
+  padding: 21px 23px;
+  background: #fafaf6;
+  border: 1px solid #e9eadf;
+  border-radius: 8px;
+}
+
+.north-east-page .north-east-variety h3 {
+  margin: 0 0 11px;
+  color: #32653e;
+  font-size: 17px;
+}
+
+.north-east-page .north-east-variety p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* LISTS */
+
+.north-east-page .north-east-list {
+  margin: 18px 0;
+  padding-left: 23px;
+}
+
+.north-east-page .north-east-list li {
+  padding-left: 5px;
+  margin-bottom: 12px;
+  color: #515d53;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.north-east-page .north-east-list li::marker {
+  color: #47834d;
+}
+
+/* TRADITIONAL PROCESS */
+
+.north-east-page .north-east-process {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.north-east-page .north-east-process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  padding: 19px 21px;
+  background: #f7f9f4;
+  border: 1px solid #e8eddf;
+  border-radius: 9px;
+  transition: transform 0.3s ease, background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.north-east-page .north-east-process-step > span {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #28683b;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.north-east-page .north-east-process-step h3 {
+  margin: 1px 0 7px;
+  color: #315e3b;
+  font-size: 17px;
+}
+
+.north-east-page .north-east-process-step p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.north-east-page .north-east-process-step:hover {
+  transform: translateX(6px);
+  background: #edf4e9;
+  box-shadow: 0 6px 16px rgba(35, 61, 40, 0.08);
+}
+
+.north-east-page .north-east-process-step:hover > span {
+  transform: scale(1.1);
+  background: #d0a951;
+  color: #24452d;
+}
+
+/* CONCLUSION */
+
+.north-east-page .north-east-conclusion {
+  padding: 42px;
+  background: linear-gradient(145deg, #ffffff, #f5f8ef);
+  border-left-color: #d0a951;
+  text-align: center;
+}
+
+.north-east-page .north-east-conclusion-icon {
+  margin: 8px 0 15px;
+  font-size: 42px;
+}
+
+.north-east-page .north-east-conclusion h2 {
+  color: #245b36;
+}
+
+.north-east-page .north-east-conclusion p {
+  max-width: 850px;
+  margin: 0 auto 15px;
+  text-align: left;
+}
+
+.north-east-page .north-east-final-message {
+  max-width: 850px;
+  margin: 26px auto 0;
+  padding: 20px;
+  background: #eaf2e5;
+  border-radius: 8px;
+  color: #285d37;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* BACK TO REGIONS */
+
+.north-east-page .north-east-back {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 5px;
+}
+
+.north-east-page .north-east-back a {
+  display: inline-block;
+  padding: 13px 29px;
+  background: #28683b;
+  border: 1px solid #28683b;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.north-east-page .north-east-back a:hover {
+  background: #194d2c;
+  border-color: #194d2c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(40, 104, 59, 0.18);
+}
+
+/* FOOTER */
+
+.north-east-page .north-east-footer {
+  width: 100%;
+  background: #153d29;
+  color: #ffffff;
+}
+
+.north-east-page .north-east-footer-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 6% 25px;
+  text-align: center;
+}
+
+.north-east-page .north-east-footer-content h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.north-east-page .north-east-footer-content p {
+  margin: 7px 0 22px;
+  color: #d4e6d7;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.north-east-page .north-east-footer-bottom {
+  padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #c9ddcd;
+  font-size: 13px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .north-east-page .north-east-header {
+    padding: 55px 6%;
+    gap: 30px;
+  }
+
+  .north-east-page .north-east-header h1 {
+    font-size: 48px;
+  }
+
+  .north-east-page .north-east-hero-image {
+    height: 270px;
+  }
+
+  .north-east-page .north-east-content {
+    width: 91%;
+  }
+
+  .north-east-page .north-east-card {
+    padding: 30px;
+  }
+
+  .north-east-page .north-east-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+  .north-east-page .navbar {
+    min-height: 65px;
+    padding: 10px 5%;
+  }
+
+  .north-east-page .logo img {
+    max-width: 145px;
+    max-height: 48px;
+  }
+
+  .north-east-page .north-east-header {
+    grid-template-columns: 1fr;
+    padding: 43px 6% 40px;
+    gap: 29px;
+  }
+
+  .north-east-page .north-east-header h1 {
+    font-size: 39px;
+  }
+
+  .north-east-page .north-east-header-content > p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .north-east-page .north-east-hero-image {
+    height: 225px;
+  }
+
+  .north-east-page .north-east-content {
+    width: 92%;
+    margin: 30px auto 45px;
+    gap: 19px;
+  }
+
+  .north-east-page .north-east-card {
+    padding: 24px 19px;
+    border-radius: 10px;
+  }
+
+  .north-east-page .north-east-card h2 {
+    font-size: 23px;
+  }
+
+  .north-east-page .north-east-card p,
+  .north-east-page .north-east-list li {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .north-east-page .north-east-feature-grid,
+  .north-east-page .north-east-variety-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .north-east-page .north-east-process-step {
+    gap: 13px;
+    padding: 16px 13px;
+  }
+
+  .north-east-page .north-east-process-step > span {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .north-east-page .north-east-process-step h3 {
+    font-size: 15px;
+  }
+
+  .north-east-page .north-east-process-step p {
+    font-size: 13px;
+  }
+
+  .north-east-page .north-east-conclusion {
+    padding: 27px 19px;
+  }
+
+  .north-east-page .north-east-conclusion h2 {
+    font-size: 23px;
+  }
+
+  .north-east-page .north-east-footer-content {
+    padding: 32px 6% 22px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+
+  .north-east-page .north-east-header h1 {
+    font-size: 34px;
+  }
+
+  .north-east-page .north-east-card {
+    padding: 21px 15px;
+  }
+
+  .north-east-page .north-east-card h2 {
+    font-size: 21px;
+  }
+
+  .north-east-page .north-east-feature {
+    padding: 18px 15px;
+  }
+}
+
+/* =====================================
+   NORTH EAST INDIA PAGE - HOVER EFFECTS
+===================================== */
+
+/* Smooth card effects */
+
+.north-east-page .north-east-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.north-east-page .north-east-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(35, 61, 40, 0.10);
+  border-left-color: #d0a951;
+}
+
+/* Feature card effects */
+
+.north-east-page .north-east-feature {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.north-east-page .north-east-feature:hover {
+  transform: translateY(-6px);
+  background: #eef4e9;
+  box-shadow: 0 9px 20px rgba(35, 61, 40, 0.12);
+}
+
+/* Variety card effects */
+
+.north-east-page .north-east-variety {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.north-east-page .north-east-variety:hover {
+  transform: translateY(-5px);
+  border-color: #9dbb91;
+  box-shadow: 0 8px 19px rgba(35, 61, 40, 0.09);
+}
+
+/* Hero image zoom */
+
+.north-east-page .north-east-hero-image {
+  overflow: hidden;
+}
+
+.north-east-page .north-east-hero-image img {
+  transition: transform 0.6s ease;
+}
+
+.north-east-page .north-east-hero-image:hover img {
+  transform: scale(1.06);
+}
+
+/* Button effects */
+
+.north-east-page .north-east-start-btn,
+.north-east-page .north-east-back a {
+  transition: all 0.3s ease;
+}
+
+/* Note effects */
+
+.north-east-page .north-east-note,
+.north-east-page .north-east-example {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.north-east-page .north-east-note:hover,
+.north-east-page .north-east-example:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(35, 61, 40, 0.07);
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .north-east-page *,
+  .north-east-page *::before,
+  .north-east-page *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,709 @@
+
+/* =========================================
+   MIXED CROPPING - PREMIUM PAGE DESIGN
+   IAKIS | Auditorium Readability
+========================================= */
+
+.mixed-page {
+  min-height: 100vh;
+  background: #f3f7f2;
+  color: #263b30;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.mixed-navbar {
+  min-height: 95px;
+  padding: 10px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e4ebe3;
+  box-shadow: 0 3px 15px rgba(18, 61, 42, 0.06);
+  position: relative;
+  z-index: 10;
+}
+
+.mixed-navbar .logo img {
+  width: 155px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.mixed-nav-label {
+  color: #315b42;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* =========================================
+   HERO HEADER
+========================================= */
+
+.mixed-page .detail-header,
+.mixed-hero {
+  min-height: 330px;
+  padding: 75px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(201, 160, 75, 0.20),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #103d2b 0%, #1b6240 55%, #26734a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mixed-hero::before,
+.mixed-hero::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.mixed-hero::before {
+  width: 330px;
+  height: 330px;
+  top: -190px;
+  left: -80px;
+}
+
+.mixed-hero::after {
+  width: 420px;
+  height: 420px;
+  bottom: -300px;
+  right: -100px;
+}
+
+.mixed-hero-tag {
+  display: inline-block;
+  padding: 9px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(224, 190, 116, 0.65);
+  border-radius: 30px;
+  color: #f0d99e;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.mixed-page .detail-header h1 {
+  margin: 0 0 17px;
+  color: #ffffff;
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.mixed-page .detail-header p {
+  max-width: 850px;
+  margin: 0;
+  color: #e5f0e8;
+  font-size: clamp(19px, 1.5vw, 23px);
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.mixed-hero-line {
+  width: 85px;
+  height: 4px;
+  margin-top: 28px;
+  border-radius: 10px;
+  background: #d8b46b;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.mixed-page .mixed-content {
+  width: 90%;
+  max-width: 1400px;
+  margin: 55px auto 65px;
+  padding: 0;
+  background: transparent;
+}
+
+/* =========================================
+   CONTENT CARDS
+========================================= */
+
+.mixed-page .detail-card {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 38px 45px 38px 48px;
+  background: #ffffff;
+  border: 1px solid #e3ebe2;
+  border-left: 5px solid #26734a;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px rgba(22, 65, 43, 0.07);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.mixed-page .detail-card:hover {
+  transform: translateY(-4px);
+  border-left-color: #c99b45;
+  box-shadow: 0 12px 28px rgba(22, 65, 43, 0.12);
+}
+
+.mixed-section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #174c34, #2c8051);
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(23, 76, 52, 0.18);
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+.mixed-page .detail-card h2 {
+  margin: 0 0 20px;
+  padding-bottom: 13px;
+  color: #174c34;
+  border-bottom: 1px solid #e6eee6;
+  font-size: clamp(27px, 2.2vw, 34px);
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.mixed-page .detail-card h3 {
+  color: #1d5c3c;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.mixed-page .detail-card p {
+  margin: 0 0 17px;
+  color: #3e5145;
+  font-size: clamp(19px, 1.4vw, 22px);
+  line-height: 1.8;
+  text-align: left;
+}
+
+.mixed-page .detail-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.mixed-page .detail-card ul,
+.mixed-page .detail-card ol {
+  margin: 12px 0 20px;
+  padding-left: 32px;
+}
+
+.mixed-page .detail-card li {
+  margin-bottom: 12px;
+  padding-left: 5px;
+  color: #3e5145;
+  font-size: clamp(19px, 1.4vw, 22px);
+  line-height: 1.8;
+}
+
+.mixed-page .detail-card li::marker {
+  color: #b68a3d;
+  font-weight: 700;
+}
+
+.mixed-page .detail-card strong {
+  color: #174c34;
+  font-weight: 700;
+}
+
+/* =========================================
+   STEP-BY-STEP PROCESS
+========================================= */
+
+.mixed-page .mixed-steps {
+  padding-left: 38px;
+}
+
+.mixed-page .mixed-steps li {
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+
+.mixed-page .mixed-steps li strong {
+  color: #1b6240;
+}
+
+/* =========================================
+   MIXED CROPPING CYCLE
+========================================= */
+
+.mixed-page .mixed-cycle {
+  max-width: 750px;
+  margin: 30px auto 5px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #f0f7ef, #e7f1e6);
+  border: 1px solid #d8e8d7;
+  border-radius: 16px;
+}
+
+.mixed-page .mixed-cycle div {
+  width: 85%;
+  max-width: 520px;
+  padding: 18px 22px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #174c34, #2d7950);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 5px 13px rgba(23, 76, 52, 0.15);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mixed-page .mixed-cycle div:hover {
+  transform: scale(1.035);
+  background: linear-gradient(135deg, #b48637, #d0a956);
+}
+
+.mixed-page .mixed-cycle span {
+  display: block;
+  margin: 7px 0;
+  color: #b68a3d;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* =========================================
+   KNOWLEDGE NOTE
+========================================= */
+
+.mixed-page .knowledge-note {
+  margin-top: 45px;
+  padding: 40px 45px;
+  background: linear-gradient(135deg, #fffaf0, #fff4dc);
+  border: 1px solid #ead7ac;
+  border-left: 6px solid #c39443;
+  box-shadow: 0 7px 22px rgba(129, 94, 34, 0.08);
+}
+
+.mixed-page .knowledge-note h2 {
+  color: #76551f;
+  border-bottom-color: #eadbb9;
+}
+
+.mixed-page .knowledge-note p {
+  color: #625236;
+}
+
+.mixed-note-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #9a702c;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+/* =========================================
+   BACK TO PRACTICES
+========================================= */
+
+.mixed-page .detail-back {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 55px;
+}
+
+.mixed-page .detail-back a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #174c34, #26734a);
+  border: 1px solid #174c34;
+  border-radius: 8px;
+  box-shadow: 0 5px 14px rgba(23, 76, 52, 0.18);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.mixed-page .detail-back a:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #b48637, #d0a956);
+  border-color: #b48637;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(129, 94, 34, 0.2);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.mixed-page .mixed-footer {
+  width: 100%;
+  margin: 0;
+  padding: 38px 20px;
+  color: #e8f1e9;
+  background: #103d2b;
+  text-align: center;
+  border-top: 4px solid #c99b45;
+}
+
+.mixed-page .mixed-footer h3 {
+  margin: 0 0 13px;
+  color: #f0d99e;
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.mixed-page .mixed-footer p {
+  margin: 8px 0;
+  color: #d4e2d7;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.mixed-page .mixed-footer .copyright {
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: #c2d3c6;
+  font-size: 15px;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .mixed-navbar {
+    min-height: 80px;
+    padding: 8px 5%;
+  }
+
+  .mixed-navbar .logo img {
+    width: 125px;
+    height: 65px;
+  }
+
+  .mixed-nav-label {
+    max-width: 180px;
+    font-size: 13px;
+    text-align: right;
+  }
+
+  .mixed-page .detail-header,
+  .mixed-hero {
+    min-height: 260px;
+    padding: 60px 22px;
+  }
+
+  .mixed-page .detail-header h1 {
+    font-size: 38px;
+  }
+
+  .mixed-page .detail-header p {
+    font-size: 18px;
+  }
+
+  .mixed-hero-tag {
+    font-size: 12px;
+    letter-spacing: 1.3px;
+  }
+
+  .mixed-page .mixed-content {
+    width: 92%;
+    margin: 35px auto 45px;
+  }
+
+  .mixed-page .detail-card {
+    padding: 28px 27px;
+    margin-bottom: 22px;
+  }
+
+  .mixed-page .detail-card h2 {
+    font-size: 25px;
+  }
+
+  .mixed-page .detail-card p,
+  .mixed-page .detail-card li {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .mixed-page .mixed-cycle {
+    padding: 22px 15px;
+  }
+
+  .mixed-page .mixed-cycle div {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .mixed-page .knowledge-note {
+    padding: 30px 27px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+  .mixed-navbar {
+    min-height: 72px;
+    padding: 7px 4%;
+  }
+
+  .mixed-navbar .logo img {
+    width: 105px;
+    height: 58px;
+  }
+
+  .mixed-nav-label {
+    max-width: 145px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .mixed-page .detail-header,
+  .mixed-hero {
+    min-height: 235px;
+    padding: 48px 17px;
+  }
+
+  .mixed-hero-tag {
+    padding: 7px 13px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .mixed-page .detail-header h1 {
+    font-size: 31px;
+  }
+
+  .mixed-page .detail-header p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .mixed-page .mixed-content {
+    width: 92%;
+    margin: 28px auto 35px;
+  }
+
+  .mixed-page .detail-card {
+    padding: 23px 19px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+  }
+
+  .mixed-section-number {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .mixed-page .detail-card h2 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .mixed-page .detail-card p,
+  .mixed-page .detail-card li {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .mixed-page .detail-card ul,
+  .mixed-page .detail-card ol {
+    padding-left: 24px;
+  }
+
+  .mixed-page .mixed-steps li {
+    padding-left: 3px;
+    margin-bottom: 13px;
+  }
+
+  .mixed-page .mixed-cycle {
+    padding: 17px 10px;
+    border-radius: 12px;
+  }
+
+  .mixed-page .mixed-cycle div {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+  }
+
+  .mixed-page .mixed-cycle span {
+    margin: 5px 0;
+    font-size: 25px;
+  }
+
+  .mixed-page .knowledge-note {
+    margin-top: 30px;
+    padding: 25px 19px;
+  }
+
+  .mixed-note-label {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+  }
+
+  .mixed-page .detail-back {
+    margin: 30px auto 38px;
+  }
+
+  .mixed-page .detail-back a {
+    padding: 13px 23px;
+    font-size: 16px;
+  }
+
+  .mixed-page .mixed-footer {
+    padding: 30px 15px;
+  }
+
+  .mixed-page .mixed-footer h3 {
+    font-size: 19px;
+  }
+
+  .mixed-page .mixed-footer p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .mixed-page .detail-card,
+  .mixed-page .mixed-cycle div,
+  .mixed-page .detail-back a {
+    transition: none;
+  }
+
+  .mixed-page .detail-card:hover,
+  .mixed-page .mixed-cycle div:hover,
+  .mixed-page .detail-back a:hover {
+    transform: none;
+  }
+}
+
+/* =====================================
+   MIXED CROPPING - BACK BUTTON FIX
+===================================== */
+
+.mixed-page .detail-back {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mixed-page .detail-back a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  padding: 13px 25px !important;
+  margin: 0 !important;
+
+  background: #ffffff !important;
+  color: #28683b !important;
+  border: 1px solid #43874e !important;
+  border-radius: 10px !important;
+
+  box-shadow: none !important;
+  transform: none !important;
+  text-decoration: none !important;
+
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease !important;
+}
+
+.mixed-page .detail-back a:hover {
+  background: #174b2b !important;
+  color: #ffffff !important;
+  border-color: #174b2b !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+/* MIXED CROPPING - CYCLE BOX HOVER EFFECT */
+
+.mixed-content .mixed-cycle div {
+  background: #edf5ee !important;
+  color: #123d2a !important;
+  border: 1px solid #c6d9c9 !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.mixed-content .mixed-cycle div:hover {
+  background: #123d2a !important;
+  color: #ffffff !important;
+  border-color: #123d2a !important;
+  box-shadow: 0 8px 20px rgba(18, 61, 42, 0.3) !important;
+  transform: translateY(-5px) !important;
+}
+
+.mixed-content .mixed-cycle div:hover * {
+  color: #ffffff !important;
+}
