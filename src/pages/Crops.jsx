@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import "../App.css";
 import "./Crops.css";
-import logo from "./assets/iakis-logo.png";
 
 // Crop Images
 import riceImage from "./assets/rice.jpg";
@@ -17,17 +17,7 @@ function Crops() {
     <div className="app">
 
       {/* Navigation Bar */}
-            <nav className="navbar">
-             <div className="logo">
-        <img src={logo} alt="IAKIS Logo" />
-      
-        <p className="logo-fullform">
-          INDIGENOUS AGRICULTURAL
-          <br />
-          KNOWLEDGE PORTAL
-        </p>
-      </div>
-      </nav>
+      <Navbar />
       {/* Header */}
       <section className="crops-header">
         <p className="section-label">INDIGENOUS CROPS</p>

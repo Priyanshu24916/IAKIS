@@ -27,13 +27,6 @@ function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Generate a new CAPTCHA whenever Login page opens
-  useEffect(() => {
-    setCaptcha(generateCaptchaCode());
-    setCaptchaInput("");
-    setError("");
-  }, []);
-
   // Refresh CAPTCHA
   const generateCaptcha = () => {
     setCaptcha(generateCaptchaCode());

@@ -1,0 +1,593 @@
+/* ==========================================================================
+   IAKIS NAVBAR - PROFESSIONAL, MODERN & RESPONSIVE
+   ========================================================================== */
+
+.iakis-navbar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(18, 60, 50, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(18, 60, 50, 0.03);
+}
+
+.iakis-navbar-wrapper.iakis-navbar-scrolled {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 4px 25px rgba(18, 60, 50, 0.08);
+  border-bottom: 1px solid rgba(196, 154, 69, 0.2);
+}
+
+/* ==========================================================================
+   TOP HERITAGE STRIP
+   ========================================================================== */
+
+.iakis-top-strip {
+  background: linear-gradient(90deg, #0d2f27 0%, #123c32 50%, #0d2f27 100%);
+  color: #f7f6f2;
+  font-size: 11px;
+  padding: 5px 3%;
+  border-bottom: 1px solid rgba(196, 154, 69, 0.35);
+}
+
+.top-strip-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.strip-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strip-badge {
+  background: #c49a45;
+  color: #0d2f27;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.strip-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.strip-center {
+  display: flex;
+  align-items: center;
+}
+
+.strip-hindi {
+  color: #f6d488;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.strip-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-greeting {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #f6d488;
+  font-weight: 600;
+}
+
+.strip-auth-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.strip-auth-link:hover {
+  color: #f6d488;
+}
+
+/* ==========================================================================
+   MAIN NAVIGATION
+   ========================================================================== */
+
+.iakis-main-nav {
+  padding: 10px 3%;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* --- BRAND LOGO & TITLE --- */
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-logo-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(196, 154, 69, 0.4);
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #123c32;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.brand-subtitle {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #8a672c;
+  letter-spacing: 1.2px;
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* --- CULTURAL HIGHLIGHT PILL --- */
+
+.nav-cultural-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(247, 246, 242, 0.8);
+  border: 1px solid rgba(196, 154, 69, 0.35);
+  padding: 6px 14px 6px 8px;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(18, 60, 50, 0.04);
+  transition: all 0.25s ease;
+}
+
+.nav-cultural-pill:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #c49a45;
+  box-shadow: 0 4px 14px rgba(196, 154, 69, 0.15);
+}
+
+.pill-avatars {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.pill-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c49a45;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.farming-circle {
+  margin-left: -12px;
+  border-color: #123c32;
+}
+
+.pill-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pill-quote {
+  font-size: 12px;
+  font-weight: 700;
+  color: #123c32;
+  line-height: 1.2;
+}
+
+.pill-slogan {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8a672c;
+  letter-spacing: 0.6px;
+}
+
+/* --- DESKTOP NAV LINKS --- */
+
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(247, 246, 242, 0.7);
+  padding: 4px;
+  border-radius: 30px;
+  border: 1px solid rgba(18, 60, 50, 0.08);
+}
+
+.nav-link-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #24463c;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  z-index: 1;
+}
+
+.nav-link-item:hover {
+  color: #123c32;
+}
+
+.nav-link-item.active {
+  color: #ffffff;
+}
+
+.nav-link-icon {
+  font-size: 14px;
+}
+
+.active-indicator {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #123c32 0%, #1b5346 100%);
+  border-radius: 24px;
+  z-index: -1;
+  box-shadow: 0 3px 10px rgba(18, 60, 50, 0.25);
+}
+
+/* --- AUTH BUTTONS --- */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-auth-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #123c32;
+  text-decoration: none;
+  border: 1.5px solid rgba(18, 60, 50, 0.2);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-auth-login:hover {
+  background: rgba(18, 60, 50, 0.06);
+  border-color: #123c32;
+  transform: translateY(-1px);
+}
+
+.btn-auth-signup {
+  display: inline-flex;
+  align-items: center;
+  padding: 8.5px 22px;
+  border-radius: 22px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #c49a45 0%, #a47c28 100%);
+  box-shadow: 0 3px 12px rgba(196, 154, 69, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-auth-signup:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #b88d30 100%);
+  box-shadow: 0 5px 18px rgba(196, 154, 69, 0.4);
+  transform: translateY(-1.5px);
+}
+
+.btn-auth-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c0392b;
+  background: rgba(192, 57, 43, 0.07);
+  border: 1.5px solid rgba(192, 57, 43, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-auth-logout:hover {
+  background: #c0392b;
+  color: #ffffff;
+  border-color: #c0392b;
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.25);
+}
+
+/* --- MOBILE TOGGLE BUTTON --- */
+
+.mobile-toggle-btn {
+  display: none;
+  background: rgba(18, 60, 50, 0.06);
+  border: 1px solid rgba(18, 60, 50, 0.15);
+  color: #123c32;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-toggle-btn:hover {
+  background: #123c32;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   MOBILE MENU DRAWER
+   ========================================================================== */
+
+.mobile-menu-drawer {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.98);
+  border-top: 1px solid rgba(18, 60, 50, 0.08);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-drawer-inner {
+  padding: 18px 5% 25px 5%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-cultural-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f7f6f2;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(196, 154, 69, 0.3);
+}
+
+.mobile-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.m-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c49a45;
+}
+
+.m-avatar:last-child {
+  margin-left: -10px;
+  border-color: #123c32;
+}
+
+.m-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #123c32;
+}
+
+.m-sub {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8a672c;
+}
+
+.mobile-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobile-link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 60, 50, 0.06);
+  color: #18352e;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.mobile-link-item:hover,
+.mobile-link-item.active {
+  background: #123c32;
+  color: #ffffff;
+  border-color: #123c32;
+}
+
+.m-link-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.m-icon {
+  font-size: 18px;
+  color: #c49a45;
+}
+
+.mobile-link-item.active .m-icon {
+  color: #ffffff;
+}
+
+.m-arrow {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.mobile-auth-box {
+  margin-top: 5px;
+}
+
+.m-auth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.m-btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #123c32;
+  border: 1.5px solid #123c32;
+  text-decoration: none;
+}
+
+.m-btn-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: #c49a45;
+  text-decoration: none;
+}
+
+.m-btn-logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #c0392b;
+  border: 1.5px solid #c0392b;
+  background: rgba(192, 57, 43, 0.06);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1140px) {
+  .nav-cultural-pill {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .strip-center {
+    display: none;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .mobile-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .iakis-top-strip {
+    font-size: 10px;
+  }
+
+  .strip-badge {
+    display: none;
+  }
+
+  .brand-logo-wrap {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-title {
+    font-size: 19px;
+  }
+
+  .brand-subtitle {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  .auth-btn-group {
+    display: none;
+  }
+}

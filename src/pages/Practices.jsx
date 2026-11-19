@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import "../App.css";
 import "./Practices.css";
-import logo from "./assets/iakis-logo.png";
 
 import organicImage from "./assets/organic--farming.jpg";
 import waterImage from "./assets/water-management.jpg";
@@ -16,17 +16,7 @@ function Practices() {
     <div className="app practice-page">
 
       {/* Navigation Bar */}
-      <nav className="navbar">
-       <div className="logo">
-  <img src={logo} alt="IAKIS Logo" />
-
-  <p className="logo-fullform">
-    INDIGENOUS AGRICULTURAL
-    <br />
-    KNOWLEDGE PORTAL
-  </p>
-</div>
-</nav>
+      <Navbar />
 
       {/* Page Header */}
       <section className="page-header">

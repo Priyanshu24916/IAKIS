@@ -1,10 +1,9 @@
 
-import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import "../App.css";
 import "./About.css";
 
-import logo from "./assets/iakis-logo.png";
 import aboutHeroImage from "./assets/about-hero.png";
 
 function About() {
@@ -12,13 +11,7 @@ function About() {
     <div className="app organic-page about-page">
 
       {/* NAVBAR */}
-      <nav className="navbar">
-        <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="IAKIS logo" />
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* HERO HEADER */}
       <header className="about-header">
